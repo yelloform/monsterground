@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+/*font-family: 'Francois One', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/*font-family: 'Raleway', sans-serif; */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*font-family: 'Noto Sans KR', sans-serif; 한글내용*/
+
+/* Common css style */ 
+
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+/* Header navibar */
+
+.main_menu {
+    width: 100%;
+    height: 80px;
+    background: #131013;
+    /* padding-top:5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.main_menu .navWrap {
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.main_menu .navWrap .logo {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main_menu .logo img {
+    width: 100%;
+}
+
+.menu_item {    
+    height: 80px;
+}
+
+.menu_item > ul > li {
+    padding: 0 4vw 0 0;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 80px;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.menu_item > ul > li > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.main_content {
+    width: 100vw;
+    height: 700px;
+}
+
+.main_biglogo img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -246px;
+}
+
+.main_downarrow img {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-left: -16px;
+}
+
+/*-------------------------------------mainend*/
+
+#fullpage {
+    top:80px;
+}
+
+.section {
+    position: relative;
+}
+
+.section-home {
+    background: #131013;
+}
+
+.section-about {}
+
+.border-left-bold {
+    border-left: 6px solid #000;
+}
+
+.about_left {
+    width: 500px;
+    margin-top: 40px;
+}
+
+.about_title {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.about_content {
+    color: #2c2c2c;
+    text-align: center;
+}
+
+.subject {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    border-bottom: solid 2px #565b5f;
+    letter-spacing: 3px;
+    color: #2c2c2c;
+}
+
+.subtitle {
+    font-family: 'Francois One', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 90px;
+}
+
+.font_red {
+    color: #fa0202;
+}
+
+.content {
+    font-size: 0.9rem;
+    line-height: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.empty_space {
+    display: inline-block;
+    height: 50px;
+
+}
+
+
+.content_en {
+    font-family: 'Signika', sans-serif;
+    font-size: 0.8rem;
+    ;
+    line-height: 10px;
+}
+
+/*------------------------------------About end*/
+
+section-business {}
+
+.business_contents {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    border-right: 6px solid #000;
+    padding: 30px;
+    background: #e9e7e7;
+
+}
+
+.business_float_right {
+    float: left;
+}
+
+.contents_inlineblock {
+    float: left;
+    width: 24%;
+    text-align: center;
+    margin-left: 0.25%;
+}
+
+
+.business_subject {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 60px;
+}
+
+.business_explain {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9rem;
+}
+
+.business_title {
+    position: absolute;
+    top: %;
+    width: 100vw;
+    height: 350px;
+    background: #ddd;
+}
+
+.business_title > div {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.title_pic1 {
+    background: url('../img/camerashoot.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.title_pic2 {
+    background: url('../img/creative1.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.title_pic3 {
+    background: url('../img/camerlense.jpg') no-repeat;
+    background-size: cover;
+}
+
+.title_pic4 {
+    background: url('../img/setting.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.section_title {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Signika', sans-serif;
+    border-bottom: solid 2px #565b5f;
+    letter-spacing: 3px;
+    color: #2c2c2c;
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    z-index: 10;
+}
+
+
+/*-------------------------business end*/
+
+.section-collaboration {
+    background: #131013;
+    position: relative;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.section-collaboration .vertical-center {
+    
+}
+.collabo_table {
+    display: inline-block;
+    width: 90%;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 30px;
+    margin-left: 5%;
+}
+.collabo_table .row .col img {
+    margin-bottom: 10%;
+    width: 100px;
+    height: 50px;
+}
+
+.tg td {
+    padding: 20px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height: 60px;
+}
+
+.tg th {
+    padding: 20px 20px;
+    width: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.tg .tg-yw4l {
+    vertical-align: top
+}
+
+.collabo_subject {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Signika', sans-serif;
+    border-bottom: solid 2px #565b5f;
+    letter-spacing: 3px;
+    color: #2c2c2c;
+    margin-bottom: 50px;
+}
+
+/*---------------------------------collabo end*/
+
+.section-qna {
+    position: relative;
+}
+
+.qna_center {
+    width: 65%;
+    height: 75%;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    padding-left: 50px;
+    border-left: 4px solid #131013;
+}
+
+.qna_center > div {
+    float: left;
+}
+
+.qna_top {
+    margin-right: 70px;
+}
+
+.qna_png {
+    position: absolute;
+    top: 22%;
+    left: 8.4%;
+}
+
+.qna_jpg {
+    width: 400px;
+    height: 300px;
+    background: url(../img/creative2.png);
+    margin-top: 40%;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.qna_btn_box > div {
+    display: inline-block;
+    padding: 10px;
+    font-size: 0.8rem;
+    background: #131013;
+    border-radius: 5px;
+    margin: 10px 15px;
+}
+
+/*제출 버튼*/
+
+.qna_btn_box > div a {
+    color: #ddd;
+}
+
+.qna_btn_box {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.qna_ask {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 55px;
+}
+
+.form_partnership {
+    position: absolute;
+    top: 160px;
+}
+
+.form_making {
+    position: absolute;
+    top: 160px;
+    display: none;
+}
+
+.qna_form {
+    width: 440px;
+}
+
+
+
+/*form ----------------------------------- partnership*/
+
+form {
+    width: 450px;
+    color: #2c2c2c;
+    font-size: 0.9rem;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type="text"] {
+    width: 440px;
+    height: 25px;
+    margin-bottom: 15px;
+
+}
+
+label[for="ment"] {
+    display: block;
+}
+
+textarea {
+    width: 440px;
+    font-style: italic;
+    margin-bottom: 10px;
+
+}
+
+input[placeholder] {
+    font-style: italic
+}
+
+.agree_ment,
+#greement {
+    float: left;
+}
+
+
+input[type="submit"] {
+    width: 450px;
+    height: 50px;
+    background: #131013;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*-------------------------------------qna end*/
+
+.section-contact {
+    position: relative;
+}
+
+/*information table*/
+
+.tg {
+    width: 450px;
+    border-collapse: collapse;
+    color: #565b5f;
+}
+
+.tg td {
+    font-size: 0.9rem;
+    ;
+    padding: 10px 5px;
+    height: 50px;
+}
+
+.contact_center {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.contact_info,
+.contact_map {
+    display: inline-block;
+}
+
+
+.section_title02 {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Signika', sans-serif;
+    border-bottom: solid 2px #565b5f;
+    letter-spacing: 3px;
+    color: #2c2c2c
+}
+
+.contact_info {
+    width: 450px;
+}
+
+.tg-031e {
+    width: 100px;
+}
+
+/*-------------------------------------section contact end*/
+
+footer {
+    width: 100%;
+    height: 34%;
+    background: #131013;
+    bottom: 0;
+    position: absolute;
+}
+
+.footer_left > div {
+    float: left;
+}
+
+.footer_logo {
+    margin-top: 30px;
+}
+
+.footer_lce > div {
+    display: inline-block;
+}
+
+.footer_lce > div:first-child {
+    margin-right: 10px;
+}
+
+.footer_info {
+    margin-left: 100px;
+    margin-top: 70px;
+    color: #ccc;
+    font-weight: 300;
+    font-family: 'Signika', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+
+.footer_left {
+    margin-left: 100px;
+}
+
+.footer_lce {
+    margin-bottom: 20px;
+}
+
+.footer_lce > div a {
+    color: #ccc;
+}
+
+.footer_copy {
+    color: #ccc;
+    font-family: 'Signika', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    clear: both;
+    margin-left: 40%;
+}
