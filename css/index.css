@@ -414,7 +414,7 @@ textarea {
 
 footer {
     width: 100%;
-    height:18vw;
+    height:310px;
     bottom: 0;
     position: absolute;
 }
@@ -423,7 +423,7 @@ footer {
     float:left;
 }
 .footer-logo-info{
-    padding:4vw;
+    padding:70px;
     background: #131013;
 }
 .footer-info-line>div img{
@@ -457,7 +457,7 @@ footer {
     background:#fff;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    line-height: 40px;
+    line-height: 25px;
 }
 
 
