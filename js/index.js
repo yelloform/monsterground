@@ -1,13 +1,12 @@
-$(function(){
+$(document).ready(function(){
+    $('.home-arrow-center').mouseenter(function(){
+        $('.home-arrow-center').hide();
+        $('.home-arrow-center-hover').fadeIn(100);
+    });
+    $('.home-arrow-center-hover').mouseleave(function(){
+        $('.home-arrow-center').fadeIn(100);
+        $('.home-arrow-center-hover').hide();
+    });
     
-    $('.partnership').click(function(){
-        $('.form_partnership').show()
-        $('.form_making').hide()
-		});
     
-    $('.makingad').click(function(){
-        $('.form_partnership').hide()
-        $('.form_making').show()
-		});
-    
-});
+});//end
