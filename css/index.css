@@ -303,7 +303,7 @@
     width: 120px;
     height: 40px;
     text-align: center;
-    padding:15px;
+    padding:18px;
 }
 .collabo-brand>div img{
     display: table-cell;
@@ -312,13 +312,10 @@
     margin: 0 auto;
 }
 .collabo-table{
-    margin-top:80px;
-}
-.collabo-table>div:last-child{
-    margin-bottom: 2vw;
+    margin-top:50px;
 }
 .margin-line{
-    margin-top:0.5vw;
+    margin-top:10px;
 }
 /*---------------------------------collabo end*/
 
@@ -370,8 +367,10 @@ textarea {
     background:#fff;
     font-weight: bold;
     transition:all 0.2s;
+    cursor: pointer;
 }
 .submit-btn a{
+    width:100%;
     display:block;
     text-decoration: none;
     color:#000;
