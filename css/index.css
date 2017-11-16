@@ -10,6 +10,9 @@
 /*font-family: 'Nanum Gothic', serif;*/
 
 /* Common css style */
+* {
+    font-family: 'Fjalla One', sans-serif;
+}
 
 .vertical-center {
     min-height: 100%;
@@ -192,10 +195,12 @@
 
 .subject {
     /*font-family: 'Lora', serif;*/
-    font-size: 0.9rem;
+    font-size: 1.6rem;
     display: inline-block;
     /*border-bottom: solid 2px #565b5f;*/
     letter-spacing: 3px;
+    color: #3f3f3f;
+    font-weight: lighter;
 }
 
 .subtitle {
@@ -259,7 +264,7 @@
 }
 
 .business-content {
-    margin-top: 3vw;
+    margin-top: 4%;
 }
 
 /*-----------------------------*/
@@ -306,7 +311,7 @@
 .contents-explain {
     clear: both;
     display: inline-block;
-    padding: 8px 10px 0 0;
+    padding: 8px 0 0 0;
     color: #565b5f;
     font-size: 0.8rem;
 }
@@ -369,7 +374,6 @@ form {
     color: #2c2c2c;
     font-size: 0.95rem;
     margin-top: 2vw;
-    font-family: 'Nanum Gothic', serif;
     font-weight: 800;
     letter-spacing: 1.2px;
 }
