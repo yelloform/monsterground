@@ -386,7 +386,7 @@ input[type="text"] {
     height: 2vw;
     margin-bottom: 15px;
     border-radius: 0;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 label[for="ment"] {
@@ -395,7 +395,7 @@ label[for="ment"] {
 
 textarea {
     border-radius: 0;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     min-height: 70px;
 }
 
