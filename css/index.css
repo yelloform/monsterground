@@ -34,6 +34,10 @@
 #menuToggle a:hover{color: #f00;}
 
 
+
+
+
+
 .vertical-center {
     min-height: 100%;
     /* Fallback for browsers do NOT support vh unit */
@@ -47,7 +51,91 @@
     align-items: center;
 }
 
+/* Header navibar */
 
+.main_menu {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.main_menu.dark {
+    background: #131013;
+    -webkit-transition: color 1s linear;
+    transition: color 1s linear;
+}
+
+.main_menu .navWrap {
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.main_menu .navWrap .logo {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    padding: 23px 0 0 10px;
+}
+
+.main_menu .logo img {
+    width: 100%;
+}
+
+.menu-item {
+
+}
+
+.menu-item > ul > li {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 80px;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 3px;
+}
+
+.menu-item > ul > li > a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 16px;
+    padding-left: 20px;
+    font-size: 1.0rem;
+}
+
+.menu-item > ul > li a:hover {
+    padding: 5px 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #f00;
+    color: #f00;
+    /*
+        border:2px solid #6e5050;
+         color:#6e5050;
+    */
+
+    /*
+        border:2px solid #f00;
+         color:#f00;
+    */
+
+    -webkit-transition: color 0.1s linear;
+
+    transition: color 0.1s linear;
+    /*    transition: border 0.1s linear;*/
+    padding: 6px 14px 6px 18px;
+
+}
+
+/*------------hover*/
 
 #background-video {
     position: fixed;
@@ -55,7 +143,7 @@
     left: 50%;
     min-width: 100%;
     min-height: 120%;
-    width: 1200px;
+    width: auto;
     height: auto;
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -140,6 +228,7 @@
 background:url(../img/section01-bg.JPG) no-repeat;
     background-size:cover;
 }
+.section-about .textWrap{ top:-170px;}
 
 .container-fluid {
     background: #131013;
@@ -201,12 +290,12 @@ background:url(../img/section01-bg.JPG) no-repeat;
     font-family: 'NanumSquare', sans-serif;
     /*font-family: 'Lora', serif;*/
     font-size: 0.85rem;
-    line-height: 2px;
+    line-height: 28px;
     font-size:1.125em;
 }
 
 /*------------------------------------About end*/
-
+/*.section-business {margin-top:80px;}*/
 [class*=gallery0]{width:50%; height:50%; float:left; overflow: hidden; margin:0; padding:0;}
 [class*=gallery0]>img{display: block;
   width: 100%;
@@ -244,7 +333,7 @@ background:url(../img/section01-bg.JPG) no-repeat;
 }
 
 .business-content {
-    /*margin-top: 4%;*/
+    margin-top: 4%;
 }
 
 /*-----------------------------*/
@@ -496,13 +585,8 @@ footer {
     line-height: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
+.top90 {
+	top : 300%;
+	position:absolute;
+	opacity : 0;
+}
