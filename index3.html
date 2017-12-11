@@ -27,6 +27,7 @@
     <meta name="facebook:image" content="img/logo.png">
     <meta name="facebook:domain" content="">
 
+
     <!--font css-->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
@@ -42,9 +43,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-
-
-    <!--basic scipt-->
+    <!--basic js-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
@@ -52,15 +51,19 @@
             crossorigin="anonymous"></script>
     <script src="js/jquery.fullpage.js"></script>
     <script src="js/index.js"></script>
-    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
+
+
+    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 </head>
 
 
 <body>
 
-<!--menuend-->
- <nav role="navigation">
+
+
+<div id="fullpage" style="background: #131013;">
+   <nav role="navigation">
       <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -76,11 +79,10 @@
       </div>
     </nav>
 
-<div id="fullpage" style="background: #131013;">
     <div class="section section-home">
         <iframe id="background-video"
                 src="https://player.vimeo.com/video/215632417?autoplay=1&loop=1&autopause=0"
-                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay style="width:120%; height:100%;"></iframe>
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
         <div id="center-logo">
             <img src="img/logo_text_W.png">
         </div>
@@ -92,6 +94,9 @@
             <div class="slide05"></div>
         </div>
     </div>
+
+
+
     <!-------------------------------section0 home end--->
 
 
@@ -104,17 +109,14 @@
                     <div class="col-lg-10">
                         <p class="about_title">
                            <!--<span class="subject" >ABOUT</span>--><br>
-                            <span class="subtitle top90" >
+                            <span class="subtitle" >
                                 <span class="font_red">M</span>ONSTER<br>
-							</span>
-                            <span class="subtitle top90" >
-                                <span class="font_red">G</span>ROUND
-							</span>
+                                <span class="font_red">G</span>ROUND</span>
                             <br>
                         </p>
 
                         <p class="about_content">
-                                <span class="content top90">
+                                <span class="content">
                                     놀라운 경험을 제공할 수 있는 다양한 브랜디드 콘텐츠<br>
                                     (주)몬스터그라운드는 고객의 마음에 감도을 새기는 콘텐츠를 지향합니다.<br>
                                     <br>
@@ -122,10 +124,10 @@
 
                             <!--<span class="empty_space"></span>-->
 
-                            <span class="content_en top90">
+                            <span class="content_en">
                                <br>
-                                Various Brandide content to deliver amazing experience<br>
-                                MONSTER GROUND tend to touch content that is touched by the customer's mind.<br>
+                                Various Brandide content to deliver amazing experience
+                                MONSTER GROUND tend to touch content that is touched by the customer's mind.
                                 MONSTER GROUND is a NEXT MDEA COMPANY based on the MCN Network (MCN) business model.</span>
                         </p>
 
@@ -362,9 +364,10 @@
 </div>
 <!--fullpage id end-->
 
+
 <script>
     var iframe = $('#background-video')[0]; //if you give your player a different ID, change it here
-    var player = $f(iframe);
+    var player = $(iframe);
     player.api('setVolume', 1); //this will unmute the video
 
     $(document).ready(function () {
@@ -385,7 +388,7 @@
                     $('.main_menu').addClass('dark');
                 }
             },
-			afterLoad: function(anchorLink, index){
+            afterLoad: function(anchorLink, index){
 				var loadedSection = $(this);
 
 				if($(this).hasClass('section-about')){
@@ -398,6 +401,7 @@
 					});
 				}
 			}
+
         });
 
     });
