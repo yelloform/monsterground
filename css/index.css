@@ -137,7 +137,7 @@
 
 /*------------hover*/
 
-#background-video {
+.background-video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -221,7 +221,7 @@
 }
 
 .section {
-    /*position: relative;*/
+   /* position: relative;*/
 }
 
 .section-about {
@@ -390,8 +390,61 @@ background:url(../img/section01-bg.JPG) no-repeat;
 .section-collaboration {
     position: relative;
 }
+.section-collaboration iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 120%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;}
+.section-collaboration .subject{color:#fff;}
+.section-collaboration #jssor_1{position:absolute; bottom:20%; z-index: 10; background:#fff; left:50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
+.section-collaboration #jssor_1 .slide-imgWrap{ display:inlinie-block; padding:5px; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
-.collabo-brand {
+.jssorl-009-spin img {
+            -webkit-animation-name: jssorl-009-spin;
+            animation-name: jssorl-009-spin;
+            -webkit-animation-duration: 1.6s;
+            animation-duration: 1.6s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes jssorl-009-spin {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+
+/*.collabo-brand {
     margin: auto;
     display: inline;
     text-align: center;
@@ -422,7 +475,7 @@ background:url(../img/section01-bg.JPG) no-repeat;
 
 .margin-line {
     margin-top: 10px;
-}
+}*/
 
 /*---------------------------------collabo end*/
 
@@ -442,7 +495,7 @@ form {
     width: 90%;
     color: #2c2c2c;
     font-size: 0.95rem;
-    margin-top: 2vw;
+    /*margin-top: 2vw;*/
     font-weight: 800;
     letter-spacing: 1.2px;
 }

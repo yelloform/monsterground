@@ -27,6 +27,7 @@
     <meta name="facebook:image" content="img/logo.png">
     <meta name="facebook:domain" content="">
 
+    <!--font css-->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -34,13 +35,15 @@
           rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
 
-
+    <!--basic css-->
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="css/jquery.fullpage.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-          <link rel="stylesheet" href="css/aos.css">
+
+    <!--basic script-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
@@ -50,6 +53,51 @@
     <script src="js/index.js"></script>
 
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+    <script type="text/javascript">
+      jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 0,
+              $SlideDuration: 5000,
+              $SlideEasing: $Jease$.$Linear,
+              $PauseOnHover: 4,
+              $SlideWidth: 120,
+              $Cols: 9,
+              $Align: 0
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1080;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+
+    </script>
 </head>
 
 
@@ -77,9 +125,10 @@
 <div id="fullpage" style="background: #131013;">
 
     <div class="section section-home">
-        <iframe id="background-video"
+      <!--  <iframe class="background-video"
                 src="https://player.vimeo.com/video/215632417?autoplay=1&loop=1&autopause=0"
-                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>-->
+            <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <div id="center-logo">
             <img src="img/logo_text_W.png">
         </div>
@@ -153,7 +202,9 @@
 
     <!--콜라보-->
     <div class="section section-collaboration">
-
+        <iframe
+        src="https://www.youtube.com/embed/OM1AGjfMSGE&autoplay=1&loop=1" frameborder="0" gesture="media" autoplay allowfullscreen webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 top-title">
@@ -161,60 +212,57 @@
             </div>
             <div class="col-md-2"></div>
         </div>
+        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1080px;height:40px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
 
-        <div class="collabo-table text-center">
-            <div class="text-center">
-                <div class="row collabo-brand margin-line">
-                    <div class="col-sm-3"><img src="img/collabo1.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo2.png"></div>
-                    <div class="col-sm-3"><img src="img/collabo3.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo40.png"></div>
+            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:50%;width:1080px;height:40px;overflow:hidden;">
+                <div data-p="30.00"  class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo1.png" />
                 </div>
-
-                <div class="row collabo-brand margin-line">
-                    <div class="col-sm-3"><img src="img/collabo41.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo44.png"></div>
-                    <div class="col-sm-3"><img src="img/collabo11.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo12.jpg"></div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo2.png" />
                 </div>
-
-                <div class="row collabo-brand margin-line">
-                    <div class="col-sm-3"><img src="img/collabo13.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo20.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo23.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo45.jpg"></div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo3.png" />
                 </div>
-
-                <div class="row collabo-brand margin-line">
-                    <div class="col-sm-3"><img src="img/collabo47.png"></div>
-                    <div class="col-sm-3"><img src="img/collabo46.PNG"></div>
-                    <div class="col-sm-3"><img src="img/collabo28.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo29.jpg"></div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo4.png" />
                 </div>
-
-                <div class="row collabo-brand margin-line">
-                    <div class="col-sm-3"><img src="img/collabo48.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo31.png"></div>
-                    <div class="col-sm-3"><img src="img/collabo32.png"></div>
-                    <div class="col-sm-3"><img src="img/collabo33.jpg"></div>
+                <div data-p="30.00" class="slide-imgWrap">
+                   <img data-u="image" src="img/collabo6.png" />
                 </div>
-
-                <div class="row collabo-brand margin-line">
-                    <div class="col-sm-3"><img src="img/collabo49.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo50.png"></div>
-                    <div class="col-sm-3"><img src="img/collabo51.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo52.png"></div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo7.png" />
                 </div>
-
-                <div class="row collabo-brand margin-line">
-                    <div class="col-sm-3"><img src="img/collabo53.png"></div>
-                    <div class="col-sm-3"><img src="img/collabo54.jpg"></div>
-                    <div class="col-sm-3"><img src="img/collabo55.png"></div>
-                    <div class="col-sm-3"><img src="img/collabo56.png"></div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo8.png" />
+                </div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo9.png" />
+                </div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo11.png" />
+                </div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo12.png" />
+                </div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo13.png" />
+                </div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo14.png" />
+                </div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo15.png" />
+                </div>
+                <div data-p="30.00" class="slide-imgWrap">
+                   <img data-u="image" src="img/collabo16.png" />
+                </div>
+                <div data-p="30.00" class="slide-imgWrap">
+                    <img data-u="image" src="img/collabo17.png" />
                 </div>
             </div>
         </div>
-
     </div>
     <!----------------------------section3 collabo end-->
 
@@ -363,7 +411,7 @@
 
 
 <script>
-    var iframe = $('#background-video')[0]; //if you give your player a different ID, change it here
+    var iframe = $('.background-video')[0]; //if you give your player a different ID, change it here
     var player = $f(iframe);
     player.api('setVolume', 1); //this will unmute the video
 
@@ -398,6 +446,7 @@
 					});
 				}
 			}
+
         });
 
     });
