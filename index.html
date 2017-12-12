@@ -39,65 +39,25 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="css/jquery.fullpage.css">
-
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <!--basic script-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
             integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
             crossorigin="anonymous"></script>
-    <script src="js/jquery.fullpage.js"></script>
+
     <script src="js/index.js"></script>
-
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+    <script src="js/swiper.js"></script>
 
-    <script type="text/javascript">
-      jssor_1_slider_init = function() {
+    <link rel="stylesheet" href="css/animate.css">
 
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $Idle: 0,
-              $SlideDuration: 5000,
-              $SlideEasing: $Jease$.$Linear,
-              $PauseOnHover: 4,
-              $SlideWidth: 120,
-              $Cols: 9,
-              $Align: 0
-            };
 
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 1080;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-
-    </script>
 </head>
 
 
@@ -125,10 +85,7 @@
 <div id="fullpage" style="background: #131013;">
 
     <div class="section section-home">
-      <!--  <iframe class="background-video"
-                src="https://player.vimeo.com/video/215632417?autoplay=1&loop=1&autopause=0"
-                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>-->
-            <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <div id="center-logo">
             <img src="img/logo_text_W.png">
         </div>
@@ -151,7 +108,7 @@
                     </div>
                     <div class="col-lg-10 textWrap" >
                         <p class="about_title">
-                           <!--<span class="subject" >ABOUT</span>--><br>
+                           <br>
                             <span class="subtitle top90" >
                                 <span class="font_red">M</span>ONSTER<br>
 							</span>
@@ -162,28 +119,24 @@
                         </p>
 
                         <p class="about_content">
-                                <span class="content top90">
-                                    놀라운 경험을 제공할 수 있는 다양한 브랜디드 콘텐츠<br>
-                                    (주)몬스터그라운드는 고객의 마음에 감도을 새기는 콘텐츠를 지향합니다.<br>
-                                    <br>
-                                    MONSTER GROUND는 MCN(Multi Channel Network) 비즈니스 모델을 기반으로 한,<br>NEXT MDEA COMPANY 입니다.</span><br>
-
-                            <!--<span class="empty_space"></span>-->
-
+                            <span class="content top90">
+                                놀라운 경험을 제공할 수 있는 다양한 브랜디드 콘텐츠<br>
+                                (주)몬스터그라운드는 고객의 마음에 감도을 새기는 콘텐츠를 지향합니다.<br>
+                                <br>
+                                MONSTER GROUND는 MCN(Multi Channel Network) 비즈니스 모델을 기반으로 한,<br>NEXT MDEA COMPANY 입니다.
+                            </span>
+                                <br>
                             <span class="content_en top90">
                                <br>
                                 Various Brandide content to deliver amazing experience<br>
                                 MONSTER GROUND tend to touch content that is touched by the customer's mind.<br>
-                                MONSTER GROUND is a NEXT MDEA COMPANY based on the MCN Network (MCN) business model.</span>
+                                MONSTER GROUND is a NEXT MDEA COMPANY based on the MCN Network (MCN) business model.
+                            </span>
                         </p>
 
                     </div>
                 </div>
             </div>
-
-            <!--<div class="col-md-7 text-center">
-                <img src="img/office.png" width="100%">
-            </div>-->
         </div>
 
 
@@ -192,141 +145,122 @@
 
 
     <div class="section section-business">
-        <div class="gallery01"><img src="img/gallery01.JPG" alt=""></div>
-        <div class="gallery02"><img src="img/gallery02.JPG" alt=""></div>
-        <div class="gallery03"><img src="img/gallery03.JPG" alt=""></div>
-        <div class="gallery04"><img src="img/gallery04.JPG" alt=""></div>
+
+        <div class="slide gallery01">
+           <div class="opacity">
+                <img src="img/gallery01.JPG" alt="">
+            </div>
+        </div>
+        <div class="slide gallery02">
+           <div class="opacity">
+                <img src="img/gallery02.JPG" alt="">
+            </div>
+        </div>
+        <div class="slide gallery03">
+           <div class="opacity">
+                <img src="img/gallery03.JPG" alt="">
+            </div>
+        </div>
+        <div class="slide gallery04">
+           <div class="opacity">
+                <img src="img/gallery04.JPG" alt="">
+            </div>
+        </div>
 
     </div>
     <!----------------------------section2 Business end-->
 
     <!--콜라보-->
     <div class="section section-collaboration">
-        <iframe
-        src="https://www.youtube.com/embed/OM1AGjfMSGE&autoplay=1&loop=1" frameborder="0" gesture="media" autoplay allowfullscreen webkitallowfullscreen mozallowfullscreen allowfullscreen>
-        </iframe>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 top-title">
-                <p><span class="subject">COLLABORATION</span></p>
+            <div class="col-md-6 collaboInfo">
+                <p class="subject-info">There are MONSTERGROUND MEDIA CLIENT</p>
+                <p class="subject">COLLABORATION</p>
             </div>
-            <div class="col-md-2"></div>
-        </div>
-        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1080px;height:40px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
+            <div class="col-md-6 collaboOrgan">
+                <div id="collWrap">
+                    <div >
+                        <div  class="slide-imgWrap">
+                            <img src="img/collabobw-1.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-2.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-3.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-4.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                           <img src="img/collabobw-5.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-6.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-7.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-8.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-9.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-10.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-11.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-12.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-13.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                           <img src="img/collabobw-14.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-15.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:50%;width:1080px;height:40px;overflow:hidden;">
-                <div data-p="30.00"  class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo1.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo2.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo3.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo4.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                   <img data-u="image" src="img/collabo6.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo7.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo8.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo9.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo11.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo12.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo13.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo14.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo15.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                   <img data-u="image" src="img/collabo16.png" />
-                </div>
-                <div data-p="30.00" class="slide-imgWrap">
-                    <img data-u="image" src="img/collabo17.png" />
-                </div>
-            </div>
-        </div>
     </div>
     <!----------------------------section3 collabo end-->
 
     <div class="section section-qna">
-
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 top-title">
-                <p><span class="subject">QUESTION &amp; ANSWER</span></p>
+       <div class="opacity">
+        <iframe class="background-video" src="https://www.youtube.com/embed/OM1AGjfMSGE?rel=0&amp;autoplay=1&loop=1&playlist=OM1AGjfMSGE&autohide=1&showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+        <div class="qnaWrap">
+            <div class="col-md-12 top-title">
+                <p class="subject">DO YOU HAVE QUESTION?</p>
             </div>
-            <div class="col-md-2"></div>
         </div>
-
-
-        <div class="row verticla-center qna_center">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <form rol="form">
-
-                    <div class="form-group">
-                        <label for="Name">성함</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="Name">기업명</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="Name">이메일</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="Name">전화번호</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="Name">제목</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="contents">내용</label>
-                        <textarea rows="4" class="form-control"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="submit-btn">
-                            <a href="#">SEND</a></button>
-                    </div>
-
-                </form>
-            </div>
-            <div class="col-md-3"></div>
+        <div class="qnaFrom">
+            <form>
+               <div class="name">
+                    <input type="text" placeholder="NAME">
+               </div>
+               <div class="email">
+                    <input type="text" placeholder="E-mail">
+               </div>
+               <div class="phone">
+                    <input type="text" placeholder="PHONE">
+               </div>
+                <button type="submit">▶</button>
+            </form>
         </div>
-        <!--row vertical-center end-->
+        <div class="snsBox">
+
+        </div>
     </div>
     <!-----------------------section4 Q&A end---->
 
 
-    <div class="section section-contact">
+   <!-- <div class="section section-contact">
 
         <div class="row">
             <div class="col-md-2"></div>
@@ -341,8 +275,10 @@
             <div class="col-lg-8" style="min-height: 350px;">
                 <div class="row" style="height:90%;">
                     <div class="col-sm-6">
+
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.4447687904944!2d127.0365886511452!3d37.5210115797074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca38a1f3ec009%3A0xe9e9fe67c4ca3e38!2z66mU7J207JeU!5e0!3m2!1sko!2skr!4v1510122932350"
                                 width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
                     </div>
                     <div class="col-sm-6">
                         <p class="contact-info">
@@ -358,7 +294,7 @@
                 </div>
             </div>
             <div class="col-lg-2"></div>
-        </div>
+        </div>-->
 
         <footer><!--footer start--->
 
@@ -408,8 +344,14 @@
 
 </div>
 <!--fullpage id end-->
-
-
+<!--<script>
+    AOS.init({
+         duration: 1200
+        });
+</script>-->
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.fullpage.js"></script>
+	<!--<script src="js/jquery.fullpage.min.js"></script>-->
 <script>
     var iframe = $('.background-video')[0]; //if you give your player a different ID, change it here
     var player = $f(iframe);
@@ -419,19 +361,10 @@
         $('#fullpage').fullpage({
             anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5'],
             menu: '.main_menu',
-                /*scrollOverflow: false,*/
             paddingTop: 0,
             paddingBottom: 0,
             onLeave: function (index, nextIndex, direction) {
                 var loadedSection = $(this);
-
-                //using index
-                /*if (nextIndex == 1) {
-                    $('.main_menu').removeClass('dark');
-
-                } else {
-                    $('.main_menu').addClass('dark');
-                }*/
             },
 			afterLoad: function(anchorLink, index){
 				var loadedSection = $(this);
@@ -446,8 +379,8 @@
 					});
 				}
 			}
-
         });
+
 
     });
 

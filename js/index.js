@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('.home-arrow-center').mouseenter(function(){
         $('.home-arrow-center').hide();
         $('.home-arrow-center-hover').fadeIn(100);
@@ -9,4 +9,4 @@ $(document).ready(function(){
     });
     
     
-});//end
+});*///end
