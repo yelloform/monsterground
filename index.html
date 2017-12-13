@@ -7,7 +7,7 @@
 
     <meta name="description" content="브랜드 콜라보레이션 및 웹드라마 제작, PPL 등 다양한 컨텐츠를 제작합니다.">
     <meta name="author" content="몬스터 그라운드">
-    <meta name="naver-site-verification" content="9c6724cc09b0166b5254bc403a277e0d66c18af7"/>
+    <meta name="naver-site-verification" content="9c6724cc09b0166b5254bc403a277e0d66c18af7" />
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="몬스터 그라운드">
@@ -31,24 +31,22 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,400,300,300italic,400italic,700,900'
-          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,400,300,300italic,400italic,700,900' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
 
     <!--basic css-->
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="css/jquery.fullpage.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/swiper.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/panel.css">
 
     <!--basic script-->
     <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/modernizr.js"></script>
 
     <script src="js/index.js"></script>
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
@@ -62,124 +60,331 @@
 
 
 <body>
-<div class="main_menu">
-   <nav role="navigation" class="main_menu">
-      <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-          <a href="#section0"><li>HOME</li></a>
-          <a href="#section1"><li>BUSINESS</li></a>
-          <a href="#section2"><li>COLLABORATION</li></a>
-          <a href="#section3"><li>Q&amp;A</li></a>
-          <a href="#section4"><li>CONTACT</li></a>
-        </ul>
-      </div>
-    </nav>
-</div>
-<!--menuend-->
-
-
-<div id="fullpage" style="background: #131013;">
-
-    <div class="section section-home">
-        <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <div id="center-logo">
-            <img src="img/logo_text_W.png">
-        </div>
-        <div class="slide-box">
-            <div class="slide01"></div>
-            <div class="slide02"></div>
-            <div class="slide03"></div>
-            <div class="slide04"></div>
-            <div class="slide05"></div>
-        </div>
+    <div class="main_menu">
+        <nav role="navigation" class="main_menu">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#section0">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#section1">
+                        <li>BUSINESS</li>
+                    </a>
+                    <a href="#section2">
+                        <li>PORTFOLIO</li>
+                    </a>
+                    <a href="#section3">
+                        <li>COLLABORATION</li>
+                    </a>
+                    <a href="#section4">
+                        <li>Q&amp;A</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
     </div>
-    <!-------------------------------section0 home end--->
+    <!--menuend-->
 
 
-    <div class="section section-about">
-        <div class="row vertical-center">
-            <div class="col-md-5">
-                <div class="row">
-                    <div class="offset-1 col-1 border-left-bold">
-                    </div>
-                    <div class="col-lg-10 textWrap" >
-                        <p class="about_title">
-                           <br>
-                            <span class="subtitle top90" >
+    <div id="fullpage" style="background: #131013;">
+
+        <div class="section section-home">
+            <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div id="center-logo">
+                <img src="img/logo_text_W.png">
+            </div>
+            <div class="slide-box">
+                <div class="slide01"></div>
+                <div class="slide02"></div>
+                <div class="slide03"></div>
+                <div class="slide04"></div>
+                <div class="slide05"></div>
+            </div>
+        </div>
+        <!-------------------------------section0 home end--->
+
+
+        <div class="section section-about">
+            <div class="row vertical-center">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="offset-1 col-1 border-left-bold">
+                        </div>
+                        <div class="col-lg-10 textWrap">
+                            <p class="about_title">
+                                <br>
+                                <span class="subtitle1 top90">
                                 <span class="font_red">M</span>ONSTER<br>
-							</span>
-                            <span class="subtitle top90" >
+                                </span>
+                                <span class="subtitle2 top90">
                                 <span class="font_red">G</span>ROUND
-							</span>
-                            <br>
-                        </p>
+                                </span>
+                                <br>
+                            </p>
 
-                        <p class="about_content">
-                            <span class="content top90">
+                            <p class="about_content">
+                                <span class="content top90">
                                 놀라운 경험을 제공할 수 있는 다양한 브랜디드 콘텐츠<br>
                                 (주)몬스터그라운드는 고객의 마음에 감도을 새기는 콘텐츠를 지향합니다.<br>
                                 <br>
                                 MONSTER GROUND는 MCN(Multi Channel Network) 비즈니스 모델을 기반으로 한,<br>NEXT MDEA COMPANY 입니다.
                             </span>
                                 <br>
-                            <span class="content_en top90">
+                                <span class="content_en top90">
                                <br>
                                 Various Brandide content to deliver amazing experience<br>
                                 MONSTER GROUND tend to touch content that is touched by the customer's mind.<br>
                                 MONSTER GROUND is a NEXT MDEA COMPANY based on the MCN Network (MCN) business model.
                             </span>
-                        </p>
+                            </p>
 
+                        </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
+        <!------------------------section1 about end----->
 
 
-    </div>
-    <!------------------------section1 about end----->
+        <div class="section section-portfolio">
+            <div class="slide slide-one">
+               <a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
+               <div class="cd-projects-container">
+                    <ul class="cd-projects-previews">
+                           <li>
+                                <a href="#0">
+                                    <div class="cd-project-title">
+                                        <h2>제이준 코스메틱</h2>
+                                    <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
+                                    </div>
+                                </a>
+                            </li>
+                        <li>
+                            <a href="#0">
+                                <div class="cd-project-title">
+                                    <h2>랜드로버</h2>
+                                    <p>랜드로버 신차 벨라 출시기념 행사</p>
+                                </div>
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="#0">
+                                <div class="cd-project-title">
+                                    <h2>APPLE RED<br>CAMPAIGN</h2>
+                                    <p>세계 에이즈의 날 레드 캠페인 영상</p>
+                                </div>
+                            </a>
+                        </li>
 
-    <div class="section section-business">
+                        <li>
+                            <a href="#0">
+                                <div class="cd-project-title">
+                                    <h2>스카이라이프</h2>
+                                    <p>KT 스카이라이프 바이럴 영상</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul> <!-- .cd-projects-previews -->
 
-        <div class="slide gallery01">
-           <div class="opacity">
-                <img src="img/gallery01.JPG" alt="">
-            </div>
+                    <ul class="cd-projects">
+                        <li>
+                            <div class="preview-image">
+                                <div class="cd-project-title">
+                                    <h2>제이준 코스메틱</h2>
+                                    <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
+                                </div>
+                            </div>
+
+                            <div class="cd-project-info">
+                                <p>
+                                    제이준 코스메틱의 명동플래그쉽<br>스토어를 홍보하기위한 CM영상
+
+                                </p>
+                            </div> <!-- .cd-project-info -->
+                        </li>
+
+                        <li>
+                            <div class="preview-image">
+                                <div class="cd-project-title">
+                                    <h2>랜드로버</h2>
+                                    <p>랜드로버 신차 벨라 출시기념 행사</p>
+                                </div>
+                            </div>
+
+                            <div class="cd-project-info">
+                                <p>
+                                    랜드로버 신차 <br> '벨라' 출시 기념 행사 스케치영상
+
+                                </p>
+                            </div> <!-- .cd-project-info -->
+                        </li>
+
+                        <li>
+                            <div class="preview-image">
+                                <div class="cd-project-title">
+                                    <h2>APPLE RED<br>CAMPAIGN</h2>
+                                    <p>세계 에이즈의 날 레드 캠페인 영상</p>
+                                </div>
+                            </div>
+
+                            <div class="cd-project-info">
+                                <p>
+                                    2016 세계 에이즈의 날 APPLE의 모든 게임 참여 및 결제시 후원금으로 쓰이는 레드캠페인 홍보영상
+                                </p>
+                            </div> <!-- .cd-project-info -->
+                        </li>
+
+                        <li>
+                            <div class="preview-image">
+                                <div class="cd-project-title">
+                                    <h2>스카이라이프</h2>
+                                    <p>KT 스카이라이프 바이럴 영상</p>
+                                </div>
+                            </div>
+
+                            <div class="cd-project-info">
+                                <p>
+                                    KT스카이라이프 LTE TV출시 기념<br>
+                                    그것이 알고싶다 패러디 버전으로 산손에서 터널에서도 통신망이 완벽하다는 내용의 홍보영상
+
+                                </p>
+                            </div> <!-- .cd-project-info -->
+                        </li>
+                    </ul> <!-- .cd-projects -->
+
+                    <button class="backward cd-text-replace">back</button>
+                </div>
+           </div>
+           <div class="slide">
+                <div class="cd-projects-container">
+                    <ul class="cd-projects-previews">
+                           <li>
+                                <a href="#0">
+                                    <div class="cd-project-title">
+                                        <h2>제이준 코스메틱</h2>
+                                    <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
+                                    </div>
+                                </a>
+                            </li>
+                        <li>
+                            <a href="#0">
+                                <div class="cd-project-title">
+                                    <h2>랜드로버</h2>
+                                    <p>랜드로버 신차 벨라 출시기념 행사</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#0">
+                                <div class="cd-project-title">
+                                    <h2>APPLE RED<br>CAMPAIGN</h2>
+                                    <p>세계 에이즈의 날 레드 캠페인 영상</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#0">
+                                <div class="cd-project-title">
+                                    <h2>스카이라이프</h2>
+                                    <p>KT 스카이라이프 바이럴 영상</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul> <!-- .cd-projects-previews -->
+
+                    <ul class="cd-projects">
+                        <li>
+                           <div class="opacity">
+                            <div class="preview-image">
+                                <div class="cd-project-title">
+                                    <h2>제이준 코스메틱</h2>
+                                    <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
+                                </div>
+                            </div>
+
+                            <div class="cd-project-info">
+                                <p>
+                                    제이준 코스메틱의 명동플래그쉽<br>스토어를 홍보하기위한 CM영상
+
+                                </p>
+                            </div>
+                        </div> <!-- .cd-project-info -->
+                        </li>
+
+                        <li>
+                            <div class="preview-image">
+                                <div class="cd-project-title">
+                                    <h2>랜드로버</h2>
+                                    <p>랜드로버 신차 벨라 출시기념 행사</p>
+                                </div>
+                            </div>
+
+                            <div class="cd-project-info">
+                                <p>
+                                    랜드로버 신차 <br> '벨라' 출시 기념 행사 스케치영상
+
+                                </p>
+                            </div> <!-- .cd-project-info -->
+                        </li>
+
+                        <li>
+                            <div class="preview-image">
+                                <div class="cd-project-title">
+                                    <h2>APPLE RED<br>CAMPAIGN</h2>
+                                    <p>세계 에이즈의 날 레드 캠페인 영상</p>
+                                </div>
+                            </div>
+
+                            <div class="cd-project-info">
+                                <p>
+                                    2016 세계 에이즈의 날 APPLE의 모든 게임 참여 및 결제시 후원금으로 쓰이는 레드캠페인 홍보영상
+                                </p>
+                            </div> <!-- .cd-project-info -->
+                        </li>
+
+                        <li>
+                            <div class="preview-image">
+                                <div class="cd-project-title">
+                                    <h2>스카이라이프</h2>
+                                    <p>KT 스카이라이프 바이럴 영상</p>
+                                </div>
+                            </div>
+
+                            <div class="cd-project-info">
+                                <p>
+                                    KT스카이라이프 LTE TV출시 기념<br>
+                                    그것이 알고싶다 패러디 버전으로 산손에서 터널에서도 통신망이 완벽하다는 내용의 홍보영상
+
+                                </p>
+                            </div> <!-- .cd-project-info -->
+                        </li>
+                    </ul> <!-- .cd-projects -->
+
+                    <button class="backward cd-text-replace">back</button>
+                </div>
+           </div>
         </div>
-        <div class="slide gallery02">
-           <div class="opacity">
-                <img src="img/gallery02.JPG" alt="">
-            </div>
-        </div>
-        <div class="slide gallery03">
-           <div class="opacity">
-                <img src="img/gallery03.JPG" alt="">
-            </div>
-        </div>
-        <div class="slide gallery04">
-           <div class="opacity">
-                <img src="img/gallery04.JPG" alt="">
-            </div>
-        </div>
+        <!----------------------------section2 Business end-->
 
-    </div>
-    <!----------------------------section2 Business end-->
-
-    <!--콜라보-->
-    <div class="section section-collaboration">
+        <!--콜라보-->
+        <div class="section section-collaboration">
             <div class="col-md-6 collaboInfo">
                 <p class="subject-info">There are MONSTERGROUND MEDIA CLIENT</p>
                 <p class="subject">COLLABORATION</p>
             </div>
             <div class="col-md-6 collaboOrgan">
                 <div id="collWrap">
-                    <div >
-                        <div  class="slide-imgWrap">
+                    <div>
+                        <div class="slide-imgWrap">
                             <img src="img/collabobw-1.png" />
                         </div>
                         <div class="slide-imgWrap">
@@ -192,7 +397,7 @@
                             <img src="img/collabobw-4.png" />
                         </div>
                         <div class="slide-imgWrap">
-                           <img src="img/collabobw-5.png" />
+                            <img src="img/collabobw-5.png" />
                         </div>
                         <div class="slide-imgWrap">
                             <img src="img/collabobw-6.png" />
@@ -219,7 +424,7 @@
                             <img src="img/collabobw-13.png" />
                         </div>
                         <div class="slide-imgWrap">
-                           <img src="img/collabobw-14.png" />
+                            <img src="img/collabobw-14.png" />
                         </div>
                         <div class="slide-imgWrap">
                             <img src="img/collabobw-15.png" />
@@ -228,163 +433,99 @@
                 </div>
             </div>
 
-    </div>
-    <!----------------------------section3 collabo end-->
-
-    <div class="section section-qna">
-       <div class="opacity">
-        <iframe class="background-video" src="https://www.youtube.com/embed/OM1AGjfMSGE?rel=0&amp;autoplay=1&loop=1&playlist=OM1AGjfMSGE&autohide=1&showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
-        <div class="qnaWrap">
-            <div class="col-md-12 top-title">
-                <p class="subject">DO YOU HAVE QUESTION?</p>
-            </div>
         </div>
-        <div class="qnaFrom">
-            <form>
-               <div class="name">
-                    <input type="text" placeholder="NAME">
-               </div>
-               <div class="email">
-                    <input type="text" placeholder="E-mail">
-               </div>
-               <div class="phone">
-                    <input type="text" placeholder="PHONE">
-               </div>
-                <button type="submit">▶</button>
-            </form>
-        </div>
-        <div class="snsBox">
+        <!----------------------------section3 collabo end-->
 
-        </div>
-    </div>
-    <!-----------------------section4 Q&A end---->
-
-
-   <!-- <div class="section section-contact">
-
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 top-title">
-                <p><span class="subject">CONTACT</span></p>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
-
-        <div class="row address-info">
-            <div class="col-lg-2 hidden-md-down"></div>
-            <div class="col-lg-8" style="min-height: 350px;">
-                <div class="row" style="height:90%;">
-                    <div class="col-sm-6">
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.4447687904944!2d127.0365886511452!3d37.5210115797074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca38a1f3ec009%3A0xe9e9fe67c4ca3e38!2z66mU7J207JeU!5e0!3m2!1sko!2skr!4v1510122932350"
-                                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="contact-info">
-                            <span class="font-bold">사업자 번호:</span> 788-88-00452<br>
-                            <span class="font-bold">대표자명:</span><br>
-                            <span class="font-bold">주소:</span>
-                            서울특별시 강남구 논현동 도산대로54길 26, 2F<br>
-                            <span class="font-bold">전화번호:</span>
-                            02-2135-7677 (월~금 10AM~7PM)<br>
-                            <span class="font-bold">이메일:</span> iamjunsikk@monsterground.com
-                        </p>
-                    </div>
+        <div class="section section-qna">
+            <div class="opacity">
+                <iframe class="background-video" src="https://www.youtube.com/embed/OM1AGjfMSGE?rel=0&amp;autoplay=1&loop=1&playlist=OM1AGjfMSGE&autohide=1&showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+            <div class="qnaWrap">
+                <div class="col-md-12 top-title">
+                    <p class="subject">DO YOU HAVE QUESTION?</p>
                 </div>
             </div>
-            <div class="col-lg-2"></div>
-        </div>-->
-
-        <footer><!--footer start--->
-
-            <div class="row footer-logo-info">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8">
-                    <div class="row vertical-center">
-                        <div class="footerlogo col-md-2">
-                            <img src="img/LOGO@2x-8.png">
-                        </div>
-
-                        <div class="footerinfo col-md-10">
-                            <div class="footer-info-line">
-                                <div><img src="img/placeholder.png"></div>
-                                <div><span
-                                        class="font-eng">26, Dosan-daero 54-gil, Gangnam-gu, Seoul, Republic of Korea</span>
-                                </div>
-                            </div>
-                            <div class="footer-info-line">
-                                <div><img src="img/phone-call.png"></div>
-                                <div><span class="font-eng">+82 2-2135-7677 (Mon~Fri 10AM~7PM)</span></div>
-                            </div>
-                            <div class="footer-info-line">
-                                <div><img src="img/email.png"></div>
-                                <div><span class="font-eng">
-                                   iamjunsikk@monsterground.com
-                               </span></div>
-                            </div>
-                        </div><!--info box-->
+            <div class="qnaFrom">
+                <form>
+                    <div class="name">
+                        <input type="text" placeholder="NAME">
                     </div>
-                </div>
-                <div class="col-lg-2"></div>
+                    <div class="email">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="phone">
+                        <input type="text" placeholder="PHONE">
+                    </div>
+                    <button type="submit">▶</button>
+                </form>
             </div>
+            <div class="snsBox">
 
-            <div class="row copyright">
-                <div class="col-md-12 copyright-line">
-                    <span class="font-eng">&copy; Copyright 2017 MONSTERGROUND. All rights reserved.</span>
-                </div>
             </div>
-
-        </footer>
-
+        </div>
+        <!-----------------------section4 Q&A end---->
 
     </div>
     <!--------------------------section5 contact end--->
 
 
-</div>
-<!--fullpage id end-->
-<!--<script>
-    AOS.init({
-         duration: 1200
+    <!--fullpage id end-->
+
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+
+
+    <script src="js/jquery.fullpage.js"></script>
+
+    <!--<script src="js/jquery.fullpage.min.js"></script>-->
+    <script>
+        var iframe = $('.background-video')[0]; //if you give your player a different ID, change it here
+        var player = $f(iframe);
+        player.api('setVolume', 1); //this will unmute the video
+
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5'],
+                menu: '.main_menu',
+                scrollingSpeed:300,
+                slidesNavigation: true,
+                paddingTop: 0,
+                paddingBottom: 0,
+                onLeave: function(index, nextIndex, direction) {
+                    var loadedSection = $(this);
+                },
+                afterLoad: function(anchorLink, index) {
+                    var loadedSection = $(this);
+
+                    if ($(this).hasClass('section-about')) {
+                        $(this).find('.top90:eq(0)').animate({
+                            top: '0%',
+                            opacity: '1'
+                        }, 300, () => {
+                            $(this).find('.top90:eq(1)').animate({
+                                top: '68%',
+                                opacity: '1'
+                            }, 300, () => {
+                                $(this).find('.top90:eq(2)').animate({
+                                    top: '165%',
+                                    opacity: '1'
+                                }, 300, () => {
+                                    $(this).find('.top90:eq(3)').animate({
+                                        top: '308%',
+                                        opacity: '1'
+                                    }, 300)
+                                });
+                            });
+                        });
+                    }
+                }
+            });
         });
-</script>-->
-<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-<script src="js/jquery.fullpage.js"></script>
-	<!--<script src="js/jquery.fullpage.min.js"></script>-->
-<script>
-    var iframe = $('.background-video')[0]; //if you give your player a different ID, change it here
-    var player = $f(iframe);
-    player.api('setVolume', 1); //this will unmute the video
 
-    $(document).ready(function () {
-        $('#fullpage').fullpage({
-            anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5'],
-            menu: '.main_menu',
-            paddingTop: 0,
-            paddingBottom: 0,
-            onLeave: function (index, nextIndex, direction) {
-                var loadedSection = $(this);
-            },
-			afterLoad: function(anchorLink, index){
-				var loadedSection = $(this);
-
-				if($(this).hasClass('section-about')){
-					$(this).find('.top90:eq(0)').animate({top:'0%',opacity:'1'},300,()=>{
-						$(this).find('.top90:eq(1)').animate({top:'68%',opacity:'1'},300,()=>{
-							$(this).find('.top90:eq(2)').animate({top:'165%',opacity:'1'},300,()=>{
-								$(this).find('.top90:eq(3)').animate({top:'308%',opacity:'1'},300)
-							});
-						});
-					});
-				}
-			}
-        });
-
-
-    });
-
-</script>
+    </script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var hs = jQuery.noConflict();
+    </script>
 
 
 </body>
