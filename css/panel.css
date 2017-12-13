@@ -479,7 +479,7 @@ li.selected .cd-project-title,
   /* rest button default style */
   cursor: pointer;
   border: none;
-  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  background: url("../img/cd-icon-delet.svg") no-repeat center center;
   visibility: hidden;
     transform:rotate(-90deg);
   -webkit-transform: translateX(-50%) scale(0);
