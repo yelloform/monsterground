@@ -35,23 +35,57 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
 
     <!--basic css-->
-    <link rel="stylesheet" href="css/all.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
-    <link href="css/jquery.fullpage.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/panel.css"/>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/jquery.fullpage.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/panel.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
 
-    <!--basic script-->
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/modernizr.js"></script>
 
     <script src="js/index.js"></script>
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
-    <script src="js/swiper.js"></script>
 
-    <link rel="stylesheet" href="css/animate.css">
+
+
+    <!--<link rel="stylesheet" href="css/animate.css">-->
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right:auto;
+        }
+
+        .swiper-slide {
+            /*background-size: cover;
+            background-position: center;*/
+            overflow: hidden !important;
+        }
+
+        .gallery-top {
+            height: 80%;
+            width: 100%; margin:0; padding:0;
+        }
+
+        .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .gallery-thumbs .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+        }
+    </style>
 
 
 
@@ -82,8 +116,10 @@
                     <a href="#section4">
                         <li>Q&amp;A</li>
                     </a>
+                    <img src="img/logo19@2x-8.png" alt="몬스터 그라운드 로고">
                 </ul>
             </div>
+
         </nav>
     </div>
     <!--menuend-->
@@ -92,7 +128,69 @@
     <div id="fullpage" style="background: #131013;">
 
         <div class="section section-home">
-            <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="swiper-container gallery-top">
+                <div id="center-logo">
+                    <img src="img/logo_text_W.png">
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <iframe class="background-video" src="https://www.youtube.com/embed/dsXQ0hPJltE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe class="background-video" src="https://www.youtube.com/embed/IrDx_h6TmKI?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe class="background-video" src="https://player.vimeo.com/video/215633393?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe class="background-video" src="https://player.vimeo.com/video/206550608?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe class="background-video" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe class="background-video" src="https://www.youtube.com/embed/PFMC-f3EOnM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background:url('img/homeImg01.jpg') center center; background-size:cover;"></div>
+                    <div class="swiper-slide" style="background:url('img/homeImg02.jpg') center center; background-size:cover;"></div>
+                    <div class="swiper-slide" style="background:url('img/homeImg03.jpg') center center; background-size:cover;"></div>
+                    <div class="swiper-slide" style="background:url('img/homeImg04.jpg') center center; background-size:cover;"></div>
+                    <div class="swiper-slide" style="background:url('img/homeImg05.jpg') center center; background-size:cover;"></div>
+                    <div class="swiper-slide" style="background:url('img/homeImg06.jpg') center center; background-size:cover;"></div>
+                    <div class="swiper-slide" style="background:url('img/homeImg07.jpg') center center; background-size:cover;"></div>
+                </div>
+            </div>
+            <!--<ul id="light-slider">
+                <li>
+                    <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div id="center-logo">
+                        <img src="img/logo_text_W.png">
+                    </div>
+                </li>
+                <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.4447687904944!2d127.0365886511452!3d37.5210115797074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca38a1f3ec009%3A0xe9e9fe67c4ca3e38!2z66mU7J207JeU!5e0!3m2!1sko!2skr!4v1510122932350"
+                                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </li>
+
+            </ul>-->
+
+
+
+            <!-- <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <div id="center-logo">
                 <img src="img/logo_text_W.png">
             </div>
@@ -102,7 +200,7 @@
                 <div class="slide03"></div>
                 <div class="slide04"></div>
                 <div class="slide05"></div>
-            </div>
+            </div>-->
         </div>
         <!-------------------------------section0 home end--->
 
@@ -152,224 +250,120 @@
 
 
         <div class="section section-portfolio">
-            <div class="slide" id="slide1">
-               <a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
-               <div class="cd-projects-container">
-                    <ul class="cd-projects-previews">
-                           <li>
-                                <a href="#0">
-                                    <div class="cd-project-title">
-                                        <h2>제이준 코스메틱</h2>
-                                    <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
-                                    </div>
-                                </a>
-                            </li>
-                        <li>
-                            <a href="#0">
-                                <div class="cd-project-title">
-                                    <h2>랜드로버</h2>
-                                    <p>랜드로버 신차 벨라 출시기념 행사</p>
-                                </div>
-                            </a>
-                        </li>
 
-                        <li>
-                            <a href="#0">
-                                <div class="cd-project-title">
-                                    <h2>APPLE RED<br>CAMPAIGN</h2>
-                                    <p>세계 에이즈의 날 레드 캠페인 영상</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#0">
-                                <div class="cd-project-title">
-                                    <h2>스카이라이프</h2>
-                                    <p>KT 스카이라이프 바이럴 영상</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul> <!-- .cd-projects-previews -->
-
-                    <ul class="cd-projects">
-                        <li>
-                            <div class="preview-image">
-                                <div class="cd-project-title">
-                                    <h2>제이준 코스메틱</h2>
-                                    <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
-                                </div>
+            <a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
+            <div class="cd-projects-container">
+                <ul class="cd-projects-previews">
+                    <li>
+                        <a href="#0">
+                            <div class="cd-project-title">
+                                <h2>제이준 코스메틱</h2>
+                                <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
                             </div>
-
-                            <div class="cd-project-info">
-                                <p>
-                                    제이준 코스메틱의 명동플래그쉽<br>스토어를 홍보하기위한 CM영상
-
-                                </p>
-                            </div> <!-- .cd-project-info -->
-                        </li>
-
-                        <li>
-                            <div class="preview-image">
-                                <div class="cd-project-title">
-                                    <h2>랜드로버</h2>
-                                    <p>랜드로버 신차 벨라 출시기념 행사</p>
-                                </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0">
+                            <div class="cd-project-title">
+                                <h2>랜드로버</h2>
+                                <p>랜드로버 신차 벨라 출시기념 행사</p>
                             </div>
+                        </a>
+                    </li>
 
-                            <div class="cd-project-info">
-                                <p>
-                                    랜드로버 신차 <br> '벨라' 출시 기념 행사 스케치영상
-
-                                </p>
-                            </div> <!-- .cd-project-info -->
-                        </li>
-
-                        <li>
-                            <div class="preview-image">
-                                <div class="cd-project-title">
-                                    <h2>APPLE RED<br>CAMPAIGN</h2>
-                                    <p>세계 에이즈의 날 레드 캠페인 영상</p>
-                                </div>
+                    <li>
+                        <a href="#0">
+                            <div class="cd-project-title">
+                                <h2>APPLE RED<br>CAMPAIGN</h2>
+                                <p>세계 에이즈의 날 레드 캠페인 영상</p>
                             </div>
+                        </a>
+                    </li>
 
-                            <div class="cd-project-info">
-                                <p>
-                                    2016 세계 에이즈의 날 APPLE의 모든 게임 참여 및 결제시 후원금으로 쓰이는 레드캠페인 홍보영상
-                                </p>
-                            </div> <!-- .cd-project-info -->
-                        </li>
-
-                        <li>
-                            <div class="preview-image">
-                                <div class="cd-project-title">
-                                    <h2>스카이라이프</h2>
-                                    <p>KT 스카이라이프 바이럴 영상</p>
-                                </div>
+                    <li>
+                        <a href="#0">
+                            <div class="cd-project-title">
+                                <h2>스카이라이프</h2>
+                                <p>KT 스카이라이프 바이럴 영상</p>
                             </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- .cd-projects-previews -->
 
-                            <div class="cd-project-info">
-                                <p>
-                                    KT스카이라이프 LTE TV출시 기념<br>
-                                    그것이 알고싶다 패러디 버전으로 산손에서 터널에서도 통신망이 완벽하다는 내용의 홍보영상
-
-                                </p>
-                            </div> <!-- .cd-project-info -->
-                        </li>
-                    </ul> <!-- .cd-projects -->
-
-                    <button class="backward cd-text-replace">back</button>
-                </div>
-           </div>
-           <div class="slide" id="slide2">
-                <div class="cd-projects-container">
-                    <ul class="cd-projects-previews">
-                           <li>
-                                <a href="#0">
-                                    <div class="cd-project-title">
-                                        <h2>(주)HNINE(h9works)</h2>
-                                        <p>Wendzi App CM 영상</p>
-                                    </div>
-                                </a>
-                            </li>
-                        <li>
-                            <a href="#0">
-                                <div class="cd-project-title">
-                                    <h2>르나드블랑</h2>
-                                    <p>다이아모니엘 서울 코스메틱<br>르나드블랑 신제품 바이럴영상<p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#0">
-                                <div class="cd-project-title">
-                                    <h2>네네치킨</h2>
-                                    <p>네네치킨 웹툰 공모전 '넵툰공모전'<br>메이킹 필름 영상 및 라이브 스트리밍</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#0">
-                                <div class="cd-project-title">
-                                    <h2>PACKTOR</h2>
-                                    <p>스와이프 앱 홍보를 위한 라이브 스트리밍</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul> <!-- .cd-projects-previews -->
-
-                    <ul class="cd-projects">
-                        <li>
-                           <div class="opacity">
-                            <div class="preview-image">
-                                <div class="cd-project-title">
-                                    <h2>(주)HNINE(h9works)</h2>
-                                    <p>Wendzi App CM 영상</p>
-                                </div>
+                <ul class="cd-projects">
+                    <li>
+                        <div class="preview-image">
+                            <div class="cd-project-title">
+                                <h2>제이준 코스메틱</h2>
+                                <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
                             </div>
+                        </div>
 
-                            <div class="cd-project-info">
-                                <p>
-                                    웬지 재능기부 어플리케이션을 누구나 사용하고 등록하고<br>쉽게 이용할 수 있는 점을 풀어내는 광고 영상
+                        <div class="cd-project-info">
+                            <p>
+                                제이준 코스메틱의 명동플래그쉽<br>스토어를 홍보하기위한 CM영상
 
-                                </p>
+                            </p>
+                        </div>
+                        <!-- .cd-project-info -->
+                    </li>
+
+                    <li>
+                        <div class="preview-image">
+                            <div class="cd-project-title">
+                                <h2>랜드로버</h2>
+                                <p>랜드로버 신차 벨라 출시기념 행사</p>
                             </div>
-                        </div> <!-- .cd-project-info -->
-                        </li>
+                        </div>
 
-                        <li>
-                            <div class="preview-image">
-                                <div class="cd-project-title">
-                                    <h2>르나드블랑</h2>
-                                    <p>다이아모니엘 서울 코스메틱<br>르나드블랑 신제품 바이럴영상<p>
-                                </div>
+                        <div class="cd-project-info">
+                            <p>
+                                랜드로버 신차 <br> '벨라' 출시 기념 행사 스케치영상
+
+                            </p>
+                        </div>
+                        <!-- .cd-project-info -->
+                    </li>
+
+                    <li>
+                        <div class="preview-image">
+                            <div class="cd-project-title">
+                                <h2>APPLE RED<br>CAMPAIGN</h2>
+                                <p>세계 에이즈의 날 레드 캠페인 영상</p>
                             </div>
+                        </div>
 
-                            <div class="cd-project-info">
-                                <p>
-                                    신제품 풀시 '배달통'의 팰러디 버전으로 수분이 부족한 것을<br>
-                                    마스크 팩으로 채워주는 것을 전하고자 한 바이럴 영상
-                                </p>
-                            </div> <!-- .cd-project-info -->
-                        </li>
+                        <div class="cd-project-info">
+                            <p>
+                                2016 세계 에이즈의 날 APPLE의 모든 게임 참여 및 결제시 후원금으로 쓰이는 레드캠페인 홍보영상
+                            </p>
+                        </div>
+                        <!-- .cd-project-info -->
+                    </li>
 
-                        <li>
-                            <div class="preview-image">
-                                <div class="cd-project-title">
-                                    <h2>네네치킨</h2>
-                                    <p>네네치킨 웹툰 공모전 '넵툰공모전'<br>메이킹 필름 영상 및 라이브 스트리밍</p>
-                                </div>
+                    <li>
+                        <div class="preview-image">
+                            <div class="cd-project-title">
+                                <h2>스카이라이프</h2>
+                                <p>KT 스카이라이프 바이럴 영상</p>
                             </div>
+                        </div>
 
-                            <div class="cd-project-info">
-                                <p>
-                                    네네치킨 웹툰공모전 홍보를 위한 BJ라이브 스트리밍 컨텐츠 촬영 및<br>메이킹 영상 촬영
-                                </p>
-                            </div> <!-- .cd-project-info -->
-                        </li>
+                        <div class="cd-project-info">
+                            <p>
+                                KT스카이라이프 LTE TV출시 기념<br> 그것이 알고싶다 패러디 버전으로 산손에서 터널에서도 통신망이 완벽하다는 내용의 홍보영상
 
-                        <li>
-                            <div class="preview-image">
-                                <div class="cd-project-title">
-                                    <h2>PACKTOR</h2>
-                                    <p>스와이프 앱 홍보를 위한 라이브 스트리밍</p>
-                                </div>
-                            </div>
+                            </p>
+                        </div>
+                        <!-- .cd-project-info -->
+                    </li>
+                </ul>
+                <!-- .cd-projects -->
 
-                            <div class="cd-project-info">
-                                <p>
-                                    스와이프 앱 홍보를 위한 라이브 스트리밍 방송
+                <button class="backward cd-text-replace">back</button>
 
-                                </p>
-                            </div> <!-- .cd-project-info -->
-                        </li>
-                    </ul> <!-- .cd-projects -->
-
-                    <button class="backward cd-text-replace">back</button>
-                </div>
-           </div>
+            </div>
         </div>
         <!----------------------------section2 Business end-->
 
@@ -457,7 +451,8 @@
                 </form>
             </div>
             <div class="snsBox">
-
+                <div class="facebook"></div>
+                <div class="twitter"></div>
             </div>
         </div>
         <!-----------------------section4 Q&A end---->
@@ -472,6 +467,8 @@
 
 
     <script src="js/jquery.fullpage.js"></script>
+    <script src="js/lightslider.js"></script>
+
 
     <!--<script src="js/jquery.fullpage.min.js"></script>-->
     <script>
@@ -483,7 +480,7 @@
             $('#fullpage').fullpage({
                 anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5'],
                 menu: '.main_menu',
-                scrollingSpeed:300,
+                scrollingSpeed: 300,
                 slidesNavigation: true,
                 paddingTop: 0,
                 paddingBottom: 0,
@@ -514,46 +511,37 @@
                             });
                         });
                     }
-                },
-                afterRender: function () {
-                    setInterval(function () {
-                        $.fn.fullpage.moveSlideRight();
-                    }, 3000);
-                }
-            });
-            function moveTo(sectionAnchor, slideAnchor){
-                var destiny = getSectionByAnchor(sectionAnchor);
-
-                if (typeof slideAnchor !== 'undefined'){
-                    scrollPageAndSlide(sectionAnchor, slideAnchor);
-                }else if(destiny.length > 0){
-                    scrollPage(destiny);
-                }
-            }
-
-            /**
-            * Slides right the slider of the active section.
-            * Optional `section` param.
-            */
-                function moveSlideRight(section){
-                    moveSlide('right', section);
-                }
-
-            /**
-            * Slides left the slider of the active section.
-            * Optional `section` param.
-            */
-                function moveSlideLeft(section){
-                    moveSlide('left', section);
                 }
             });
 
-
+        });
     </script>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        var hs = jQuery.noConflict();
+    </script>
+    <script src="js/swiper.js"></script>
     <script>
-      var hs = jQuery.noConflict();
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            fadeEffect: {
+                crossFade: true
+              },
+        });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+        });
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
     </script>
 
 
