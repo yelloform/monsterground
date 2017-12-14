@@ -266,15 +266,15 @@ span.font_red {
 /*------------------------------------About end*/
 
 
-.section-portfolio{background:#000;}
+/*.section-portfolio{opacity:0;}*/
 .section-portfolio.active .bg-loaded:nth-child(1)
-{-webkit-animation: fadeIn 0.5s ease 0;animation: fadeIn 0.5s ease 0; -webkit-transition:all 1s; -webkit-transition:all 1s; transition:all 1s;}
+{-webkit-animation: fadeIn 2s ease 0.5s;animation: fadeIn 2s ease 0.5s; }
 .section-portfolio.active .bg-loaded:nth-child(2)
-{-webkit-animation: fadeIn 0.5s ease 0.2s;animation: fadeIn  0.5s ease 0.2s; -webkit-transition:all 1s; -webkit-transition:all 1s; transition:all 1s;}
+{-webkit-animation: fadeIn 2s ease 1s;animation: fadeIn  2s ease 1s; }
 .section-portfolio.active .bg-loaded:nth-child(3)
-{-webkit-animation: fadeIn 0.5s ease 0.4s;animation: fadeIn  0.5s ease 0.4s; -webkit-transition:all 1s; -webkit-transition:all 1s; transition:all 1s;}
+{-webkit-animation: fadeIn 2s ease 1.5s;animation: fadeIn  2s ease 1.5s;}
 .section-portfolio.active .bg-loaded:nth-child(4)
-{-webkit-animation: fadeIn 0.5s ease 0.6s;animation: fadeIn  0.5s ease 0.6s; -webkit-transition:all 1s; -webkit-transition:all 1s; transition:all 1s;}
+{-webkit-animation: fadeIn 2s ease 2s;animation: fadeIn  2s ease 2s; }
 
 
 
