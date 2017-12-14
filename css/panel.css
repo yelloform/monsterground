@@ -277,7 +277,7 @@ Projects
 }
 .cd-projects > li.selected {
   z-index: 1;
-  opacity: 0.8;
+  opacity: 1;
   -webkit-transition: opacity 0s;
   transition: opacity 0s;
 }
@@ -460,15 +460,14 @@ li.selected .cd-project-title,
 .cd-project-info {
     font-family: 'NanumSquare', sans-serif;
     position:absolute; bottom:20%;
-    /*left:50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);*/
-  display: none;
+   display: none;
     width:100%; text-align: center;
-  padding: 4em 0;
-  background-color: transparent;
-  color: #fff;
+   padding: 4em 0;
+   background-color: transparent;
+   color: #fff;
     opacity: 1;
+    -webkit-transition:opacity 0.3s ;
+    transition:opacity 0.3s ;
 }
 .content-visible .cd-project-info {
   display: block;
@@ -495,7 +494,6 @@ li.selected .cd-project-title,
   border: none;
   background: url("../img/cd-icon-delet.svg") no-repeat center center;
   visibility: hidden;
-    transform:rotate(-90deg);
   -webkit-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
   -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s;
