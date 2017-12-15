@@ -52,24 +52,29 @@
 
     <!--<link rel="stylesheet" href="css/animate.css">-->
     <style>
-        .section-home .swiper-container {
-            width: 100% !important;
-            /*height: 300px;*/
-            margin: 0 !important;
-            margin-left: auto;
-            margin-right:auto;
+        .swiper-container {
+            /* min-width:1920px;*/
+            width: 120%;
+            height: 300px;
+            margin: 0;
+            /*margin-left: auto;
+            margin-right:auto;*/
         }
-        .section-home .gallery-top .swiper-slide{width:100% !important;}
-        .section-home .swiper-slide {overflow: hidden !important;}
+        .gallery-top .swiper-slide{width:100% !important;}
+        .swiper-slide {
+            /*background-size: cover;
+            background-position: center;*/
+            overflow: hidden !important;
+        }
 
-        .section-home .gallery-top {
+        .gallery-top {
             height: 100%;
             width: 100%;
-            /*margin: 0;
-            padding: 0;*/
+            margin: 0;
+            padding: 0;
         }
 
-        .section-home .gallery-thumbs {
+        .gallery-thumbs {
             height: 20%;
             box-sizing: border-box;
             padding: 10px 0;
@@ -78,13 +83,13 @@
             background: transparent;
         }
 
-        .section-home .gallery-thumbs .swiper-slide {
+        .gallery-thumbs .swiper-slide {
             width: 20%;
             height: 100%;
             opacity: 0.4;
         }
 
-        .section-home .gallery-thumbs .swiper-slide-active {
+        .gallery-thumbs .swiper-slide-active {
             opacity: 1;
         }
     </style>
@@ -135,19 +140,19 @@
                     <img src="img/logo_text_W.png">
                 </div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://www.youtube.com/embed/dsXQ0hPJltE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <div class="swiper-slide" style="background:red;">
+                        <!--<iframe class="background-video" src="https://www.youtube.com/embed/dsXQ0hPJltE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
                     </div>
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://www.youtube.com/embed/IrDx_h6TmKI?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <div class="swiper-slide" style="background:blue;">
+                        <!--<iframe class="background-video" src="https://www.youtube.com/embed/IrDx_h6TmKI?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
                     </div>
 
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div class="swiper-slide" style="background:green;">
+                       <!-- <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
 
                     </div>
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://player.vimeo.com/video/215633393?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div class="swiper-slide" style="background:red;">
+                        <!--<iframe class="background-video" src="https://player.vimeo.com/video/215633393?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
                     </div>
                     <div class="swiper-slide">
                         <iframe class="background-video" src="https://player.vimeo.com/video/206550608?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -179,7 +184,7 @@
         </div>
         <!-------------------------------section0 home end--->
         <div class="section section-about">
-            <!--<div class="vertical-center">-->
+            <div class="vertical-center">
                <video id="bgvid" preload="auto" autoplay loop muted>
                <source class="mp4 display" src="https://giant.gfycat.com/DeliriousElectricCoypu.mp4" type="video/mp4">
                 <source class="webm" src="https://giant.gfycat.com/DeliriousElectricCoypu.webm" type="video/webm">
@@ -199,7 +204,7 @@
                     <p>몬스터 그라운드는 크리에이티브한 아이디어와, 젊음의 열정, 그리고 감동이 있는 프로젝트 결과물을 통해, 당신의 순간을 연출합니다.</p>
                     <button>START</button>
                 </div>
-            <!--</div>-->
+            </div>
         </div>
     <!------------------------section1 about end----->
     <div class="section section-portfolio">
@@ -438,9 +443,9 @@
 
     <!--<script src="js/jquery.fullpage.min.js"></script>-->
     <script>
-        var iframe = $('.background-video')[0];
+        var iframe = $('.background-video')[0]; //if you give your player a different ID, change it here
         var player = $f(iframe);
-        player.api('setVolume', 1);
+        player.api('setVolume', 1); //this will unmute the video
 
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -465,14 +470,17 @@
     </script>
     <script src="js/swiper.js"></script>
     <script>
-        var galleryTop = new Swiper('.section-home .gallery-top', {
+        var galleryTop = new Swiper('.gallery-top', {
             spaceBetween: 0,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            }
+            },
+            fadeEffect: {
+                crossFade: true
+            },
         });
-        var galleryThumbs = new Swiper('.section-home .gallery-thumbs', {
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
             centeredSlides: true,
             slidesPerView: 'auto',
@@ -492,60 +500,54 @@
             breakpoints: {
                 1024: {
                     slidesPerView: 4,
-                    spaceBetween: 30,
+                    spaceBetween: 40,
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 20,
+                    spaceBetween: 30,
                 },
                 640: {
                     slidesPerView: 2,
-                    spaceBetween: 10,
+                    spaceBetween: 20,
                 },
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 5,
+                    spaceBetween: 10,
                 }
             }
         });
-            var vid = document.getElementById("bgvid");
-            var pauseButton = document.querySelector("#textWrap button");
-            function playVid(){
-                vid.play();
-            }
-            if (window.matchMedia('(prefers-reduced-motion)').matches) {
-                vid.removeAttribute("autoplay");
-                vid.pause();
-                pauseButton.innerHTML = "Paused";
-            };
-            /*var video = $('.section-about #bgvid');
-            if($('.section-about').addClass('active')){
-                video.play();
-            };*/
-            function vidFade() {
-              vid.classList.add("stopfade");
-            }
+        var vid = document.getElementById("bgvid");
+        var pauseButton = document.querySelector("#textWrap button");
 
-            vid.addEventListener('ended', function()
-            {
-            // only functional if "loop" is removed
+        /*if (window.matchMedia('(prefers-reduced-motion)').matches) {
+            vid.removeAttribute("autoplay");
             vid.pause();
-            // to capture IE10
-            vidFade();
-            });
+            pauseButton.innerHTML = "Paused";
+        }*/
+
+        function vidFade() {
+          vid.classList.add("stopfade");
+        }
+
+        vid.addEventListener('ended', function()
+        {
+        // only functional if "loop" is removed
+        vid.pause();
+        // to capture IE10
+        vidFade();
+        });
 
 
-            pauseButton.addEventListener("click", function() {
-              vid.classList.toggle("stopfade");
-              if (vid.paused) {
-                vid.play();
-                pauseButton.innerHTML = "START";
-              } else {
-                vid.pause();
-                pauseButton.innerHTML = "Paused";
-              }
-            })
-
+        pauseButton.addEventListener("click", function() {
+          vid.classList.toggle("stopfade");
+          if (vid.paused) {
+            vid.play();
+            pauseButton.innerHTML = "START";
+          } else {
+            vid.pause();
+            pauseButton.innerHTML = "Paused";
+          }
+        })
     </script>
 
 
