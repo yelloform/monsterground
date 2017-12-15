@@ -434,5 +434,5 @@ text-align: center;
 .section-qna footer .footer-info-line > div {
     display: inline-block; padding-bottom: 0.6vw; font-size: 0.8 .5rem;}
 .section-qna footer .copyright { width: 100%;margin-top:20px;}
-.section-qna footer .copyright-line {text-align: center;background: #fff;font-size: 0.8rem;
+.section-qna footer .copyright-line {text-align: center;background: rgba(0,0,0,0.4); font-size: 0.8rem; color:#fff;
     letter-spacing: 1px;line-height: 40px; width:100%; bottom:0;}
