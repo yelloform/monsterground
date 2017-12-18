@@ -168,11 +168,12 @@
 }
 
 .section-about  #textWrap h2,
-.section-about  #textWrap p:nth-child(1),
-.section-about  #textWrap p:nth-child(2),
 .section-about  #textWrap p:nth-child(3),
 .section-about  #textWrap p:nth-child(4),
-.section-about  #textWrap p:nth-child(5){
+.section-about  #textWrap p:nth-child(5),
+.section-about  #textWrap p:nth-child(6),
+.section-about  #textWrap p:nth-child(7),
+.section-about  #textWrap button{
 	-webkit-transform: translateY(-1000px);
 	transform: translateY(-1000px);
 	opacity: 0;
@@ -188,7 +189,8 @@
 }
 
 .section-about.active   #textWrap h2,
-.section-about.active   #textWrap p {
+.section-about.active   #textWrap p,
+.section-about.active #textWrap button{
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 	opacity: 1;
@@ -199,23 +201,23 @@
 	transition-delay: .77s;
 }
 
-.section-about.active   #textWrap p:nth-child(1) {
+.section-about.active   #textWrap p:nth-child(3) {
 	-webkit-transition-delay: .66s;
 	transition-delay: .66s;
 }
-.section-about.active   #textWrap p:nth-child(2) {
+.section-about.active   #textWrap p:nth-child(4) {
 	-webkit-transition-delay: .55s;
 	transition-delay: .55s;
 }
-.section-about.active   #textWrap p:nth-child(3) {
+.section-about.active   #textWrap p:nth-child(5) {
 	-webkit-transition-delay: .44s;
 	transition-delay: .44s;
 }
-.section-about.active   #textWrap p:nth-child(4) {
+.section-about.active   #textWrap p:nth-child(6) {
 	-webkit-transition-delay: .33s;
 	transition-delay: .33s;
 }
-.section-about.active   #textWrap p:nth-child(5) {
+.section-about.active   #textWrap p:nth-child(7) {
 	-webkit-transition-delay: .22s;
 	transition-delay: .22s;
 }

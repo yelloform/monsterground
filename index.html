@@ -39,11 +39,9 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/jquery.fullpage.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
-     <link rel="stylesheet" href="css/panel.css" />
     <link rel="stylesheet" href="css/swiper.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="js/modernizr.js"></script>
     <script src="js/index.js"></script>
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
@@ -64,8 +62,6 @@
         .section-home .gallery-top {
             height: 100%;
             width: 100%;
-            /*margin: 0;
-            padding: 0;*/
         }
 
         .section-home .gallery-thumbs {
@@ -432,7 +428,7 @@
 
 
     <script src="js/jquery.fullpage.js"></script>
-    <script src="js/lightslider.js"></script>
+
 
 
     <!--<script src="js/jquery.fullpage.min.js"></script>-->
@@ -516,21 +512,29 @@
                 vid.removeAttribute("autoplay");
                 vid.pause();
                 pauseButton.innerHTML = "Paused";
-            };*/
-            /*var video = $('.section-about #bgvid');
+            };
+            var video = $('.section-about #bgvid');
             if($('.section-about').addClass('active')){
                 video.play();
             };*/
+            function vidplay() {
+               var video = document.getElementById("bgvid");
+               var button = document.getElementById("#textWrap button");
+               if (video.paused) {
+                  video.play();
+                  button.textContent = "||";
+               } else {
+                  video.pause();
+                  button.textContent = ">";
+               }
+            }
             function vidFade() {
               vid.classList.add("stopfade");
             }
 
-            vid.addEventListener('ended', function()
-            {
-            // only functional if "loop" is removed
-            vid.pause();
-            // to capture IE10
-            vidFade();
+            vid.addEventListener('ended', function(){
+                vid.pause();
+                vidFade();
             });
 
 
