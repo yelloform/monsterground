@@ -291,11 +291,11 @@ span.font_red {
           -ms-flex-align: center;
           align-items: center;}
 .section-portfolio .swiper-slide a{display:block; width:100%; height:100%; overflow: hidden; color:#fff;}
-.section-portfolio .swiper-slide img { display: block; max-height: initial;-o-object-fit: cover;object-fit: cover;}
+.section-portfolio .swiper-slide img { display: block; max-height: initial;-o-object-fit: cover; -webkit-object-fit: cover; object-fit: cover;/*height:100%; width:100%;*/ }
 .section-portfolio .swiper-slide .portfolio-title{position:absolute; top:50%; left:50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); z-index: 99; opacity:0;}
 .section-portfolio .swiper-slide .portfolio-title h2{font-size: 2.4em; font-weight: bold;}
 .section-portfolio .swiper-slide a:hover:after{display:block; content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6)}
-.section-portfolio .swiper-slide a:hover img{width:110%; height:110%; -webkit-transition:1s; -webkit-transition:1s; transition:1s; margin-left:-5%; margin-top:-5%;}
+.section-portfolio .swiper-slide a:hover img{ height:110%; -webkit-transition:1s; -webkit-transition:1s; transition:1s;  margin:-5%;}
 
 .section-portfolio.active .portfolio-title {opacity:1; -webkit-transition:0.3s; transition:0.3s}
 
@@ -306,8 +306,9 @@ span.font_red {
 
 .section-collaboration {position: relative; height:100%;}
 
-.section-collaboration .col-md-6 { padding:10%; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.section-collaboration .collaboInfo{text-align: center;position:absolute; left:0; top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%); /*height:100%; */}
+.section-collaboration .col-md-6 { padding:10%; -webkit-box-sizing: border-box; box-sizing: border-box; height:100%;}
+.section-collaboration .collaboInfo{text-align: center;position:absolute; left:0; top:0; height:100%; width:100%;}
+.section-collaboration .subject-wrap{position:Absolute; top:50%; width:100%; -webkit-transform:translateY(-50%);transform:translateY(-50%); z-index: 50; text-align: center; width:100%; }
 .section-collaboration .collaboInfo p{text-align: center;width:100%; }
 .section-collaboration .collaboInfo .subject-info{letter-spacing: 2px;padding-left:5px; color:gray;}
 .section-collaboration .collaboInfo .subject{font-size: 3.9rem;color:#000;}

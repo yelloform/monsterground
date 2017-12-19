@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="css/jquery.fullpage.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/swiper.css" />
-
+    <script src="js/modernizr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
@@ -299,19 +299,21 @@
             <!-- Add Pagination -->
         </div>
 
-        <div class="overlay" id="overlay01">
+        <!--<div class="overlay" id="overlay01">
             <div class="overlay-content">
 
             </div>
-        </div>
+        </div>-->
     </div>
     <!----------------------------section2 Business end-->
 
     <!--콜라보-->
     <div class="section section-collaboration">
         <div class="col-md-6 collaboInfo">
-            <p class="subject-info">There are MONSTERGROUND MEDIA CLIENT</p>
-            <p class="subject">COLLABORATION</p>
+           <div class="subject-wrap">
+                <p class="subject-info">There are MONSTERGROUND MEDIA CLIENT</p>
+                <p class="subject">COLLABORATION</p>
+            </div>
         </div>
         <div class="col-md-6 collaboOrgan">
             <div id="collWrap">
@@ -461,7 +463,7 @@
                     var loadedSection = $(this);
                 }
             });
-            var slideWidth=$('.section-home .gallery-top .swiper-slide').width();
+            /*var slideWidth=$('.section-home .gallery-top .swiper-slide').width();
             var windowWidth = $(window).width();
             $('.section-home .gallery-top .swiper-slide').width(windowWidth);
 
@@ -473,11 +475,11 @@
                  $(this).find(MainVid).play();
             }else{
                 $(this).find(MainVid).pause();
-            };
+            };*/
         });
 
     </script>
-    <script src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
 
     <script src="js/main.js"></script>
     <script type="text/javascript">
