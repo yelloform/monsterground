@@ -51,17 +51,17 @@
     <style>
         .section-home .swiper-container {
             width: 100% !important;
-            /*height: 300px;*/
             margin: 0 !important;
             margin-left: auto;
             margin-right:auto;
         }
         .section-home .gallery-top .swiper-slide{width:100% !important;}
-        .section-home .swiper-slide {overflow: hidden !important;}
-
+        .section-home .swiper-slide {overflow: hidden !important; clear:both;}
+        /*.swiper-slide-active{margin-left:-2.5%;}*/
         .section-home .gallery-top {
             height: 100%;
             width: 100%;
+            margin:0; padding:0;
         }
 
         .section-home .gallery-thumbs {
@@ -83,6 +83,15 @@
             opacity: 1;
         }
     </style>
+    <script>
+    /*$(document).ready(function(){*/
+       var slideWidth=$('.section-home .gallery-top .swiper-slide');
+        var windowWidth=$(window).width();
+        window.load(function(){
+           slideWidth.css('width',windowWidth);
+        });
+    /*});*/
+    </script>
 
 
 
@@ -435,7 +444,7 @@
     <script>
         var iframe = $('.background-video')[0];
         var player = $f(iframe);
-        player.api('setVolume', 1);
+        player.api('setVolume', 0);
 
         $(document).ready(function() {
             $('#fullpage').fullpage({
