@@ -74,7 +74,7 @@
         }
 
         .section-home .gallery-thumbs .swiper-slide {
-            width: 20%;
+            width: 25%;
             height: 100%;
             opacity: 0.4;
         }
@@ -85,11 +85,7 @@
     </style>
     <script>
     /*$(document).ready(function(){*/
-       var slideWidth=$('.section-home .gallery-top .swiper-slide');
-        var windowWidth=$(window).width();
-        window.load(function(){
-           slideWidth.css('width',windowWidth);
-        });
+
     /*});*/
     </script>
 
@@ -302,6 +298,12 @@
             </div>
             <!-- Add Pagination -->
         </div>
+
+        <div class="overlay" id="overlay01">
+            <div class="overlay-content">
+
+            </div>
+        </div>
     </div>
     <!----------------------------section2 Business end-->
 
@@ -459,11 +461,24 @@
                     var loadedSection = $(this);
                 }
             });
+            var slideWidth=$('.section-home .gallery-top .swiper-slide').width();
+            var windowWidth = $(window).width();
+            $('.section-home .gallery-top .swiper-slide').width(windowWidth);
 
+
+            var MainVid = document.getElementsByClassName("background-video");
+
+
+            if ($('.gallery-top .swiper-slide').hasClass('.swiper-slide-active')) {
+                 $(this).find(MainVid).play();
+            }else{
+                $(this).find(MainVid).pause();
+            };
         });
 
     </script>
     <script src="js/jquery-2.1.1.js"></script>
+
     <script src="js/main.js"></script>
     <script type="text/javascript">
         var hs = jQuery.noConflict();
