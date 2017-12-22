@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>몬스터 그라운드 - 콘텐츠&amp;미디어 모바일 방송국</title>
 
     <meta name="description" content="브랜드 콜라보레이션 및 웹드라마 제작, PPL 등 다양한 컨텐츠를 제작합니다.">
@@ -39,57 +40,13 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/jquery.fullpage.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
-     <link rel="stylesheet" href="css/panel.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/panel.css" />
+    <!--<link rel="stylesheet" href="css/swiper.css" />-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/index.js"></script>
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
-
-
-
-    <!--<link rel="stylesheet" href="css/animate.css">-->
-    <style>
-        .swiper-container {
-            width: 100% !important;
-            /*height: 300px;*/
-            margin: 0 !important;
-            margin-left: auto;
-            margin-right:auto;
-        }
-        .gallery-top .swiper-slide{width:100% !important;}
-        .swiper-slide {overflow: hidden !important;}
-
-        .gallery-top {
-            height: 100%;
-            width: 100%;
-            /*margin: 0;
-            padding: 0;*/
-        }
-
-        .gallery-thumbs {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            background: transparent;
-        }
-
-        .gallery-thumbs .swiper-slide {
-            width: 20%;
-            height: 100%;
-            opacity: 0.4;
-        }
-
-        .gallery-thumbs .swiper-slide-active {
-            opacity: 1;
-        }
-    </style>
-
-
-
 </head>
 
 
@@ -128,301 +85,287 @@
 
     <div id="fullpage" style="background: #131013;">
 
-        <div class="section section-home">
-            <div class="swiper-container gallery-top">
-                <div id="center-logo">
-                    <img src="img/logo_text_W.png">
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://www.youtube.com/embed/dsXQ0hPJltE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://www.youtube.com/embed/IrDx_h6TmKI?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://player.vimeo.com/video/202153134?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://player.vimeo.com/video/215633393?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://player.vimeo.com/video/206550608?autoplay=1&loop=1&autopause=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="swiper-slide">
-                        <iframe class="background-video" src="https://www.youtube.com/embed/PFMC-f3EOnM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </div>
-
-
-                </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="section section-home ">
+            <div id="center-logo">
+                <img src="img/logo_text_W.png">
             </div>
-            <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background:url('img/homeImg01.jpg') center center; background-size:cover;"></div>
-                    <div class="swiper-slide" style="background:url('img/homeImg02.jpg') center center; background-size:cover;"></div>
-                    <div class="swiper-slide" style="background:url('img/homeImg03.jpg') center center; background-size:cover;"></div>
-                    <div class="swiper-slide" style="background:url('img/homeImg04.jpg') center center; background-size:cover;"></div>
-                    <div class="swiper-slide" style="background:url('img/homeImg05.jpg') center center; background-size:cover;"></div>
-                    <div class="swiper-slide" style="background:url('img/homeImg06.jpg') center center; background-size:cover;"></div>
-                    <div class="swiper-slide" style="background:url('img/homeImg07.jpg') center center; background-size:cover;"></div>
-                </div>
-            </div>
+            <video id="bgvid" autoplay loop muted playsinline>
+                <source class="mp4 display" src="https://giant.gfycat.com/DeliriousElectricCoypu.mp4" type="video/mp4">
+                <source class="webm" src="https://giant.gfycat.com/DeliriousElectricCoypu.webm" type="video/webm">
+            </video>
         </div>
         <!-------------------------------section0 home end--->
         <div class="section section-about">
-            <!--<div class="vertical-center">-->
-               <video id="bgvid" preload="auto" autoplay loop muted>
-               <source class="mp4 display" src="https://giant.gfycat.com/DeliriousElectricCoypu.mp4" type="video/mp4">
-                <source class="webm" src="https://giant.gfycat.com/DeliriousElectricCoypu.webm" type="video/webm">
-          </video>
+            <div class="container-fluid">
 
-                <div id="textWrap">
-                    <h2>
-                        <span class="font_red">M</span>ONSTER<br>
-                    </h2>
-                    <h2>
-                        <span class="font_red">G</span>ROUND
-                    </h2>
-                    <p>상상, 그 이상을 꿈꾸는 사람들의 감성공동체</p>
-                    <p><a href="#">#몬스터그라운드</a></p>
-                    <p>몬스터 그라운드는 PROCESS INNOVATION의 이념으로, 각자 다른 개성을 가진 크리에이터 집단이 만든 회사입니다. 업무의프로세스 활동 전 부문에 걸쳐 전문화된 인력이 모인, PROFESSIONAL IDENTITY GROUP이며, 광고 및 프로젝트 업무 모든 부분에 필요한 경영사업을 진행합니다.</p>
-                    <p>세상에 있는 수많은 스토리를 자유롭게 생각하며, 상상 너머, 상상 이상의 것들로 펼쳐내는 크리에이티브 그룹을 지향하며 만들어갑니다.</p>
-                    <p>몬스터 그라운드는 크리에이티브한 아이디어와, 젊음의 열정, 그리고 감동이 있는 프로젝트 결과물을 통해, 당신의 순간을 연출합니다.</p>
-                    <button>START</button>
+                <div class="about-title" >
+                   <div class="overlay">
+                   <div class="title-wrap">
+                    <h2>공감되는, 마음을 움직이는 영상을 만듭니다</h2>
+                    <p>몬스터그라운드 미디어는 아이디어와 열정, 감동을 통해 당신의 순간을 연출합니다.<br/>스토리와 감성, 비즈니스까지 유저와 브랜드가 즐거움의 가치를 공유하는 콘텐츠를 만듭니다.</p>
+                    </div>
                 </div>
-            <!--</div>-->
-        </div>
-    <!------------------------section1 about end----->
-    <div class="section section-portfolio">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>제이준 코스메틱</h2>
-                            <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
-                        </div>
-                        <img src="img/gallery01.JPG" alt="">
-                    </a>
                 </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>랜드로버</h2>
-                            <p>랜드로버 신차 벨라 출시기념 행사</p>
+                <div class="about-container">
+                    <div class="box-wrap">
+                        <div class="box">
+                            <div class="content">
+                                <p>홍보 영상<br/>바이럴 영상<br/>홍보 영상</p>
+                            </div>
                         </div>
-                        <img src="img/gallery02.JPG" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>APPLE RED CAMPAIGN</h2>
-                            <p>세계 에이즈의 날 레드 캠페인 영상</p>
+                        <div class="content-info">
+                            <p>BROADCAST / TV CF / SPOT 영상 <br/> 기업/제품/프랜차이즈/매장/관공서 등 홍보영상
+
+                            </p>
                         </div>
-                        <img src="img/gallery03.JPG" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>KT 스카이라이프</h2>
-                            <p>KT 스카이라이프 바이럴 영상</p>
+                    </div>
+                   <div class="box-wrap">
+                        <div class="box">
+                            <div class="content">
+                                <p>박람회<br/>세미나<br/>기업행사<br/>대학교축제</p>
+                            </div>
                         </div>
-                        <img src="img/gallery04.JPG" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>르나드블랑</h2>
-                            <p>다이아모니엘 서울코스메틱<br/>르나드 블랑 신제품 바이럴 영상</p>
+                        <div class="content-info">
+                            <p>각종 기업행사 / 박랍회 / 세미나 / 워크샵 <br/> 기업/제품/프랜차이즈/매장/관공서 등 홍보영상
+
+                            </p>
                         </div>
-                        <img src="img/gallery05.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>랜드로버</h2>
-                            <p>랜드로버 신차 벨라 출시기념 행사</p>
+                    </div>
+                    <div class="box-wrap">
+                        <div class="box">
+                            <div class="content">
+                                <p>홍보 영상<br/>바이럴 영상<br/>홍보 영상</p>
+                            </div>
                         </div>
-                        <img src="img/gallery06.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>랜드로버</h2>
-                            <p>랜드로버 신차 벨라 출시기념 행사</p>
+                        <div class="content-info">
+                            <p>BROADCAST / TV CF / SPOT 영상 <br/> 기업/제품/프랜차이즈/매장/관공서 등 홍보영상
+
+                            </p>
                         </div>
-                        <img src="img/gallery07.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>랜드로버</h2>
-                            <p>랜드로버 신차 벨라 출시기념 행사</p>
-                        </div>
-                        <img src="img/gallery08.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>랜드로버</h2>
-                            <p>랜드로버 신차 벨라 출시기념 행사</p>
-                        </div>
-                        <img src="img/gallery09.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="portfolio-title">
-                            <h2>랜드로버</h2>
-                            <p>랜드로버 신차 벨라 출시기념 행사</p>
-                        </div>
-                        <img src="img/gallery10.jpg" alt="">
-                    </a>
+                    </div>
                 </div>
             </div>
-            <!-- Add Pagination -->
-        </div>
-    </div>
-    <!----------------------------section2 Business end-->
+            <!--<div id="textWrap" >
+                <h2>
+                    <span class="font_red">M</span>ONSTER<br>
+                </h2>
+                <h2>
+                    <span class="font_red">G</span>ROUND
+                </h2>
+                <p>상상, 그 이상을 꿈꾸는 사람들의 감성공동체</p>
+                <p><a href="#">#몬스터그라운드</a></p>
+                <p>몬스터 그라운드는 PROCESS INNOVATION의 이념으로, 각자 다른 개성을 가진 크리에이터 집단이 만든 회사입니다. 업무의프로세스 활동 전 부문에 걸쳐 전문화된 인력이 모인, PROFESSIONAL IDENTITY GROUP이며, 광고 및 프로젝트 업무 모든 부분에 필요한 경영사업을 진행합니다.</p>
+                <p>세상에 있는 수많은 스토리를 자유롭게 생각하며, 상상 너머, 상상 이상의 것들로 펼쳐내는 크리에이티브 그룹을 지향하며 만들어갑니다.</p>
+                <p>몬스터 그라운드는 크리에이티브한 아이디어와, 젊음의 열정, 그리고 감동이 있는 프로젝트 결과물을 통해, 당신의 순간을 연출합니다.</p>
+                <button>START</button>
+            </div>-->
 
-    <!--콜라보-->
-    <div class="section section-collaboration">
-        <div class="col-md-6 collaboInfo">
-            <p class="subject-info">There are MONSTERGROUND MEDIA CLIENT</p>
-            <p class="subject">COLLABORATION</p>
+
+
+
+
+
+
+
+
+
         </div>
-        <div class="col-md-6 collaboOrgan">
-            <div id="collWrap">
-                <div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-1.png" />
+        <!------------------------section1 about end----->
+        <div class="section section-portfolio">
+            <div class="subject">PORTFOLIO</div>
+            <div class="pofol-container">
+                <div class="view-wrapper"></div>
+
+                <div class="view view-over col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/gallery01.JPG" alt="">
+                    <div class="mask">
+                        <h2>제이준 코스메틱</h2>
+                        <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
+                        <a href="#" class="info">Read More</a>
                     </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-2.png" />
+                </div>
+                <div class="view view-over col-sm-6 col-xs-12">
+                    <img src="img/gallery02.JPG" alt="">
+                    <div class="mask">
+                        <h2>랜드로버</h2>
+                        <p>랜드로버 신차 벨라 출시기념 행사</p>
+                        <a href="#" class="info">Read More</a>
                     </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-3.png" />
+                </div>
+                <div class="view view-over col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/gallery03.JPG" alt="">
+                    <div class="mask">
+                        <h2>APPLE RED CAMPAIGN</h2>
+                        <p>세계 에이즈의 날 레드 캠페인 영상</p>
+                        <a href="#" class="info">Read More</a>
                     </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-4.png" />
+                </div>
+                <div class="view view-over col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/gallery04.JPG" alt="">
+                    <div class="mask">
+                        <h2>KT 스카이라이프</h2>
+                        <p>KT 스카이라이프 바이럴 영상</p>
+                        <a href="#" class="info">Read More</a>
                     </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-5.png" />
+                </div>
+                <div class="view view-over col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/gallery05.jpg" alt="">
+                    <div class="mask">
+                        <h2>르나드블랑</h2>
+                        <p>다이아모니엘 서울코스메틱<br/>르나드 블랑 신제품 바이럴 영상</p>
+                        <a href="#" class="info">Read More</a>
                     </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-6.png" />
+                </div>
+                <div class="view view-over col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/gallery06.jpg" alt="">
+                    <div class="mask">
+                        <h2>랜드로버</h2>
+                        <p>랜드로버 신차 벨라 출시기념 행사</p>
+                        <a href="#" class="info">Read More</a>
                     </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-7.png" />
+                </div>
+                <div class="view view-over col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/gallery07.jpg" alt="">
+                    <div class="mask">
+                        <h2>랜드로버</h2>
+                        <p>랜드로버 신차 벨라 출시기념 행사</p>
+                        <a href="#" class="info">Read More</a>
                     </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-8.png" />
-                    </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-9.png" />
-                    </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-10.png" />
-                    </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-11.png" />
-                    </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-12.png" />
-                    </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-13.png" />
-                    </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-14.png" />
-                    </div>
-                    <div class="slide-imgWrap">
-                        <img src="img/collabobw-15.png" />
+                </div>
+                <div class="view view-over col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/gallery08.jpg" alt="">
+                    <div class="mask">
+                        <h2>랜드로버</h2>
+                        <p>랜드로버 신차 벨라 출시기념 행사</p>
+                        <a href="#" class="info">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!----------------------------section3 collabo end-->
+        <!----------------------------section2 Business end-->
 
-    <div class="section section-qna">
-        <div class="opacity">
-            <iframe class="background-video" src="https://www.youtube.com/embed/OM1AGjfMSGE?rel=0&amp;autoplay=1&loop=1&playlist=OM1AGjfMSGE&autohide=1&showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
-        <div class="qnaWrap">
-            <div class="col-md-12 top-title">
-                <p class="subject">DO YOU HAVE QUESTION?</p>
+        <!--콜라보-->
+        <div class="section section-collaboration">
+            <div class="col-md-6 collaboInfo">
+                <p class="subject-info">There are MONSTERGROUND MEDIA CLIENT</p>
+                <p class="subject">COLLABORATION</p>
+            </div>
+            <div class="col-md-6 collaboOrgan">
+                <div id="collWrap">
+                    <div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-1.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-2.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-3.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-4.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-5.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-6.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-7.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-8.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-9.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-10.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-11.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-12.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-13.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-14.png" />
+                        </div>
+                        <div class="slide-imgWrap">
+                            <img src="img/collabobw-15.png" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="qnaFrom">
-            <form>
-                <div class="name">
-                    <input type="text" placeholder="NAME">
-                </div>
-                <div class="email">
-                    <input type="text" placeholder="E-mail">
-                </div>
-                <div class="phone">
-                    <input type="text" placeholder="PHONE">
-                </div>
-                <button type="submit">▶</button>
-            </form>
-        </div>
-        <footer>
-            <div class="row footer-logo-info">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8">
-                    <div class="row vertical-center">
-                        <div class="footerlogo col-md-2">
-                            <img src="img/LOGO@2x-8.png">
-                        </div>
+        <!----------------------------section3 collabo end-->
 
-                        <div class="footerinfo col-md-10">
-                            <div class="footer-info-line">
-                                <div><img src="img/placeholder.png"></div>
-                                <div><span
-                                        class="font-eng">26, Dosan-daero 54-gil, Gangnam-gu, Seoul, Republic of Korea</span>
+        <div class="section section-qna">
+            <div class="opacity">
+                <iframe class="background-video" src="https://www.youtube.com/embed/OM1AGjfMSGE?rel=0&amp;autoplay=1&loop=1&playlist=OM1AGjfMSGE&autohide=1&showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+            <div class="qnaWrap">
+                <div class="col-md-12 top-title">
+                    <p class="subject">DO YOU HAVE QUESTION?</p>
+                </div>
+            </div>
+            <div class="qnaFrom">
+                <form>
+                    <div class="name">
+                        <input type="text" placeholder="NAME">
+                    </div>
+                    <div class="email">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="phone">
+                        <input type="text" placeholder="PHONE">
+                    </div>
+                    <button type="submit">▶</button>
+                </form>
+            </div>
+            <footer>
+                <div class="row footer-logo-info">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <div class="row vertical-center">
+                            <div class="footerlogo col-md-2">
+                                <img src="img/LOGO@2x-8.png">
+                            </div>
+
+                            <div class="footerinfo col-md-10">
+                                <div class="footer-info-line">
+                                    <div><img src="img/placeholder.png"></div>
+                                    <div><span class="font-eng">26, Dosan-daero 54-gil, Gangnam-gu, Seoul, Republic of Korea</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="footer-info-line">
-                                <div><img src="img/phone-call.png"></div>
-                                <div><span class="font-eng">+82 2-2135-7677 (Mon~Fri 10AM~7PM)</span></div>
-                            </div>
-                            <div class="footer-info-line">
-                                <div><img src="img/email.png"></div>
-                                <div><span class="font-eng">
+                                <div class="footer-info-line">
+                                    <div><img src="img/phone-call.png"></div>
+                                    <div><span class="font-eng">+82 2-2135-7677 (Mon~Fri 10AM~7PM)</span></div>
+                                </div>
+                                <div class="footer-info-line">
+                                    <div><img src="img/email.png"></div>
+                                    <div><span class="font-eng">
                                    iamjunsikk@monsterground.com
                                </span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-2"></div>
                 </div>
-                <div class="col-lg-2"></div>
-            </div>
-            <div class="copyright">
-                <div class="copyright-line">
-                    <span class="font-eng">&copy; Copyright 2017 MONSTERGROUND. All rights reserved.</span>
+                <div class="copyright">
+                    <div class="copyright-line">
+                        <span class="font-eng">&copy; Copyright 2017 MONSTERGROUND. All rights reserved.</span>
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </div>
-    <!-----------------------section4 Q&A end---->
+            </footer>
+        </div>
+        <!-----------------------section4 Q&A end---->
 
-</div>
+    </div>
     <!--------------------------section5 contact end--->
 
 
@@ -437,9 +380,12 @@
 
     <!--<script src="js/jquery.fullpage.min.js"></script>-->
     <script>
-        var iframe = $('.background-video')[0];
-        var player = $f(iframe);
-        player.api('setVolume', 1);
+        /*var iframe = $('.background-video')[0];
+                                    var player = $f(iframe);
+                                    player.api('setVolume', 0);*/
+        var vid = document.getElementById("bgvid");
+        vid.autoplay = true;
+        vid.load();
 
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -455,7 +401,6 @@
             });
 
         });
-
     </script>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script>
@@ -464,87 +409,71 @@
     </script>
     <script src="js/swiper.js"></script>
     <script>
-        var galleryTop = new Swiper('.section-home .gallery-top', {
-            spaceBetween: 0,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
-        var galleryThumbs = new Swiper('.section-home .gallery-thumbs', {
-            spaceBetween: 10,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            touchRatio: 0.2,
-            slideToClickedSlide: true,
-        });
-        galleryTop.controller.control = galleryThumbs;
-        galleryThumbs.controller.control = galleryTop;
-        var swiper = new Swiper('.section-portfolio .swiper-container', {
-            slidesPerView: 5,
-            spaceBetween: 30,
-            // init: false,
-            /* pagination: {
-               el: '.section-portfolio .swiper-pagination',
-               clickable: true,
-             },*/
-            breakpoints: {
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 5,
-                }
-            }
-        });
-            var vid = document.getElementById("bgvid");
+        /*var galleryTop = new Swiper('.section-home .gallery-top', {
+                                                spaceBetween: 0,
+                                                navigation: {
+                                                    nextEl: '.swiper-button-next',
+                                                    prevEl: '.swiper-button-prev',
+                                                }
+                                            });
+                                            var galleryThumbs = new Swiper('.section-home .gallery-thumbs', {
+                                                spaceBetween: 10,
+                                                centeredSlides: true,
+                                                slidesPerView: 'auto',
+                                                touchRatio: 0.2,
+                                                slideToClickedSlide: true,
+                                            });
+                                            galleryTop.controller.control = galleryThumbs;
+                                            galleryThumbs.controller.control = galleryTop;
+                                            var swiper = new Swiper('.section-portfolio .swiper-container', {
+                                                slidesPerView: 5,
+                                                spaceBetween: 30,
+                                                // init: false,
+                                                breakpoints: {
+                                                    1024: {
+                                                        slidesPerView: 4,
+                                                        spaceBetween: 30,
+                                                    },
+                                                    768: {
+                                                        slidesPerView: 3,
+                                                        spaceBetween: 20,
+                                                    },
+                                                    640: {
+                                                        slidesPerView: 2,
+                                                        spaceBetween: 10,
+                                                    },
+                                                    320: {
+                                                        slidesPerView: 1,
+                                                        spaceBetween: 5,
+                                                    }
+                                                }
+                                            });*/
+        /*var vid = document.getElementById("bgvid");
             var pauseButton = document.querySelector("#textWrap button");
-            /*function playVid(){
-                vid.play();
-            }
-            if (window.matchMedia('(prefers-reduced-motion)').matches) {
-                vid.removeAttribute("autoplay");
-                vid.pause();
-                pauseButton.innerHTML = "Paused";
-            };*/
-            /*var video = $('.section-about #bgvid');
-            if($('.section-about').addClass('active')){
-                video.play();
-            };*/
+
             function vidFade() {
-              vid.classList.add("stopfade");
+                vid.classList.add("stopfade");
             }
 
-            vid.addEventListener('ended', function()
-            {
-            // only functional if "loop" is removed
-            vid.pause();
-            // to capture IE10
-            vidFade();
+            vid.addEventListener('ended', function() {
+                // only functional if "loop" is removed
+                vid.pause();
+                // to capture IE10
+                vidFade();
             });
 
 
             pauseButton.addEventListener("click", function() {
-              vid.classList.toggle("stopfade");
-              if (vid.paused) {
-                vid.play();
-                pauseButton.innerHTML = "START";
-              } else {
-                vid.pause();
-                pauseButton.innerHTML = "Paused";
-              }
+                vid.classList.toggle("stopfade");
+                if (vid.paused) {
+                    vid.play();
+                    pauseButton.innerHTML = "START";
+                } else {
+                    vid.pause();
+                    pauseButton.innerHTML = "Paused";
+                }
             })
-
+*/
     </script>
 
 
