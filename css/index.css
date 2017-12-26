@@ -315,7 +315,7 @@ span.font_red {
 
 .section-collaboration .collaboOrgan{background:#f1f1f1;}
 .section-collaboration #collWrap{position:relative; bottom:0; z-index: 10;  left:50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
-.section-collaboration #collWrap .slide-imgWrap{ display:inline-block; width:180px; height:120px; padding:5px 10px; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center;}
+.section-collaboration #collWrap .slide-imgWrap{ display:inline-block; width:30%; height:120px; padding:5px 10px; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center;}
 .section-collaboration #collWrap .slide-imgWrap img{width:100%;}
 
 
