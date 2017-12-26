@@ -39,14 +39,21 @@
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/jquery.fullpage.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/panel.css" />
-    <!--<link rel="stylesheet" href="css/swiper.css" />-->
+ <!--   <link rel="stylesheet" href="css/modal.css">-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/index.js"></script>
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+    <!--<script>
+    var hs = jQuery.noConflict();
+    </script>-->
+
 </head>
 
 
@@ -89,10 +96,8 @@
             <div id="center-logo">
                 <img src="img/logo_text_W.png">
             </div>
-            <video id="bgvid" autoplay loop muted playsinline>
-                <source class="mp4 display" src="https://giant.gfycat.com/DeliriousElectricCoypu.mp4" type="video/mp4">
-                <source class="webm" src="https://giant.gfycat.com/DeliriousElectricCoypu.webm" type="video/webm">
-            </video>
+            <iframe id="bgvid" class="background-video" src="https://www.youtube.com/embed/lFQ8AophRIw?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
         </div>
         <!-------------------------------section0 home end--->
         <div class="section section-about">
@@ -145,103 +150,213 @@
                     </div>
                 </div>
             </div>
-            <!--<div id="textWrap" >
-                <h2>
-                    <span class="font_red">M</span>ONSTER<br>
-                </h2>
-                <h2>
-                    <span class="font_red">G</span>ROUND
-                </h2>
-                <p>상상, 그 이상을 꿈꾸는 사람들의 감성공동체</p>
-                <p><a href="#">#몬스터그라운드</a></p>
-                <p>몬스터 그라운드는 PROCESS INNOVATION의 이념으로, 각자 다른 개성을 가진 크리에이터 집단이 만든 회사입니다. 업무의프로세스 활동 전 부문에 걸쳐 전문화된 인력이 모인, PROFESSIONAL IDENTITY GROUP이며, 광고 및 프로젝트 업무 모든 부분에 필요한 경영사업을 진행합니다.</p>
-                <p>세상에 있는 수많은 스토리를 자유롭게 생각하며, 상상 너머, 상상 이상의 것들로 펼쳐내는 크리에이티브 그룹을 지향하며 만들어갑니다.</p>
-                <p>몬스터 그라운드는 크리에이티브한 아이디어와, 젊음의 열정, 그리고 감동이 있는 프로젝트 결과물을 통해, 당신의 순간을 연출합니다.</p>
-                <button>START</button>
-            </div>-->
-
-
-
-
-
-
-
-
-
 
         </div>
         <!------------------------section1 about end----->
         <div class="section section-portfolio">
             <div class="subject">PORTFOLIO</div>
             <div class="pofol-container">
-                <div class="view-wrapper"></div>
-
-                <div class="view view-over">
+                <div class="view view-over" >
                     <img src="img/gallery01.JPG" alt="">
                     <div class="mask">
                         <h2>제이준 코스메틱</h2>
                         <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
-                        <a href="#" class="info">Read More</a>
+                        <a href="#pofol01" class="info" data-toggle="modal">Read More</a>
                     </div>
+
                 </div>
+                <div class="modal" id="pofol01">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">제이준 코스메틱</h4>
+                          <button type="button" class="close"
+                          data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/dsXQ0hPJltE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                      </div>
+                </div>
+            </div>
                 <div class="view view-over ">
                     <img src="img/gallery02.JPG" alt="">
                     <div class="mask">
                         <h2>랜드로버</h2>
                         <p>랜드로버 신차 벨라 출시기념 행사</p>
-                        <a href="#" class="info">Read More</a>
+                        <a href="#pofol02" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
+                <div class="modal" id="pofol02">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">랜드로버 벨라런칭</h4>
+                          <button type="button" class="close"
+                          data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/3vg1aBDURAQ?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                      </div>
+                </div>
+            </div>
                 <div class="view view-over ">
                     <img src="img/gallery03.JPG" alt="">
                     <div class="mask">
                         <h2>APPLE RED CAMPAIGN</h2>
                         <p>세계 에이즈의 날 레드 캠페인 영상</p>
-                        <a href="#" class="info">Read More</a>
+                        <a href="#pofol03" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
+                <div class="modal" id="pofol03">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="close"
+                          data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/kRESUUVsOUk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                      </div>
+                </div>
+            </div>
                 <div class="view view-over ">
                     <img src="img/gallery04.JPG" alt="">
                     <div class="mask">
                         <h2>KT 스카이라이프</h2>
                         <p>KT 스카이라이프 바이럴 영상</p>
-                        <a href="#" class="info">Read More</a>
+                        <a href="#pofol04" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
+                <div class="modal" id="pofol04">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">KT 스카이라이프</h4>
+                          <button type="button" class="close"
+                          data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/yM-ewo-xZQg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                      </div>
+                </div>
+            </div>
                 <div class="view view-over ">
                     <img src="img/gallery05.jpg" alt="">
                     <div class="mask">
                         <h2>르나드블랑</h2>
                         <p>다이아모니엘 서울코스메틱<br/>르나드 블랑 신제품 바이럴 영상</p>
-                        <a href="#" class="info">Read More</a>
+                        <a href="#pofol05" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
+                <div class="modal" id="pofol05">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">르나드블랑</h4>
+                          <button type="button" class="close"
+                          data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                         <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                      </div>
+                </div>
+            </div>
                 <div class="view view-over ">
                     <img src="img/gallery06.jpg" alt="">
                     <div class="mask">
                         <h2>랜드로버</h2>
                         <p>랜드로버 신차 벨라 출시기념 행사</p>
-                        <a href="#" class="info">Read More</a>
+                        <a href="#pofol06" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
+                <div class="modal" id="pofol06">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="close"
+                          data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                      </div>
+                </div>
+            </div>
                 <div class="view view-over ">
                     <img src="img/gallery07.jpg" alt="">
                     <div class="mask">
                         <h2>랜드로버</h2>
                         <p>랜드로버 신차 벨라 출시기념 행사</p>
-                        <a href="#" class="info">Read More</a>
+                        <a href="#pofol07" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
+                <div class="modal" id="pofol07">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="close"
+                          data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                      </div>
+                </div>
+            </div>
                 <div class="view view-over  ">
                     <img src="img/gallery08.jpg" alt="">
                     <div class="mask">
                         <h2>랜드로버</h2>
                         <p>랜드로버 신차 벨라 출시기념 행사</p>
-                        <a href="#" class="info">Read More</a>
+                        <a href="#pofol08" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
+                <div class="modal" id="pofol08">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="close"
+                          data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+                      </div>
+                </div>
             </div>
+            </div>
+
+
+
+
+
+
         </div>
+
         <!----------------------------section2 Business end-->
 
         <!--콜라보-->
@@ -371,21 +486,16 @@
 
     <!--fullpage id end-->
 
-    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-
-
+    <!--<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>-->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/jquery.fullpage.js"></script>
-    <script src="js/lightslider.js"></script>
-
-
-    <!--<script src="js/jquery.fullpage.min.js"></script>-->
+    <script src="js/util.js"></script>
+    <script src="js/modal.js"></script>
     <script>
-        /*var iframe = $('.background-video')[0];
-                                    var player = $f(iframe);
-                                    player.api('setVolume', 0);*/
-        var vid = document.getElementById("bgvid");
+        /*var vid = document.getElementById("bgvid");
         vid.autoplay = true;
-        vid.load();
+        vid.load();*/
 
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -399,82 +509,29 @@
                     var loadedSection = $(this);
                 }
             });
-
+            $('#pofol01').appendTo("body");
+            $('#pofol02').appendTo("body");
+            $('#pofol03').appendTo("body");
+            $('#pofol04').appendTo("body");
+            $('#pofol05').appendTo("body");
+            $('#pofol06').appendTo("body");
+            $('#pofol07').appendTo("body");
+            $('#pofol08').appendTo("body");
+            $('#pofol09').appendTo("body");
+            $('#pofol10').appendTo("body");
         });
+
+
     </script>
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript">
+
+
+
+    <!--<script type="text/javascript">
         var hs = jQuery.noConflict();
-    </script>
-    <script src="js/swiper.js"></script>
-    <script>
-        /*var galleryTop = new Swiper('.section-home .gallery-top', {
-                                                spaceBetween: 0,
-                                                navigation: {
-                                                    nextEl: '.swiper-button-next',
-                                                    prevEl: '.swiper-button-prev',
-                                                }
-                                            });
-                                            var galleryThumbs = new Swiper('.section-home .gallery-thumbs', {
-                                                spaceBetween: 10,
-                                                centeredSlides: true,
-                                                slidesPerView: 'auto',
-                                                touchRatio: 0.2,
-                                                slideToClickedSlide: true,
-                                            });
-                                            galleryTop.controller.control = galleryThumbs;
-                                            galleryThumbs.controller.control = galleryTop;
-                                            var swiper = new Swiper('.section-portfolio .swiper-container', {
-                                                slidesPerView: 5,
-                                                spaceBetween: 30,
-                                                // init: false,
-                                                breakpoints: {
-                                                    1024: {
-                                                        slidesPerView: 4,
-                                                        spaceBetween: 30,
-                                                    },
-                                                    768: {
-                                                        slidesPerView: 3,
-                                                        spaceBetween: 20,
-                                                    },
-                                                    640: {
-                                                        slidesPerView: 2,
-                                                        spaceBetween: 10,
-                                                    },
-                                                    320: {
-                                                        slidesPerView: 1,
-                                                        spaceBetween: 5,
-                                                    }
-                                                }
-                                            });*/
-        /*var vid = document.getElementById("bgvid");
-            var pauseButton = document.querySelector("#textWrap button");
-
-            function vidFade() {
-                vid.classList.add("stopfade");
-            }
-
-            vid.addEventListener('ended', function() {
-                // only functional if "loop" is removed
-                vid.pause();
-                // to capture IE10
-                vidFade();
-            });
+    </script>-->
+    <!--<script src="js/swiper.js"></script>-->
 
 
-            pauseButton.addEventListener("click", function() {
-                vid.classList.toggle("stopfade");
-                if (vid.paused) {
-                    vid.play();
-                    pauseButton.innerHTML = "START";
-                } else {
-                    vid.pause();
-                    pauseButton.innerHTML = "Paused";
-                }
-            })
-*/
-    </script>
 
 
 </body>
