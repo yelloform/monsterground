@@ -39,6 +39,7 @@
 
 /* Header navibar */
 
+.hidden{opacity:0;}
 
 /*main-section*/
 .section{position:relative; overflow: hidden!important; width:100%; height:100%; margin:0; padding:0;}

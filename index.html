@@ -47,12 +47,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="js/modernizr.js"></script>
-    <script src="js/index.js"></script>
     <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
-    <!--<script>
-    var hs = jQuery.noConflict();
-    </script>-->
 
 </head>
 
@@ -490,36 +486,17 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.fullpage.js"></script>
-    <script src="js/util.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <!--<script src="js/util.js"></script>
+    <script src="js/modal.js"></script>-->
+        <script src="js/TweenLite.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
         /*var vid = document.getElementById("bgvid");
         vid.autoplay = true;
         vid.load();*/
 
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5'],
-                menu: '.main_menu',
-                scrollingSpeed: 300,
-                slidesNavigation: true,
-                paddingTop: 0,
-                paddingBottom: 0,
-                onLeave: function(index, nextIndex, direction) {
-                    var loadedSection = $(this);
-                }
-            });
-            $('#pofol01').appendTo("body");
-            $('#pofol02').appendTo("body");
-            $('#pofol03').appendTo("body");
-            $('#pofol04').appendTo("body");
-            $('#pofol05').appendTo("body");
-            $('#pofol06').appendTo("body");
-            $('#pofol07').appendTo("body");
-            $('#pofol08').appendTo("body");
-            $('#pofol09').appendTo("body");
-            $('#pofol10').appendTo("body");
-        });
+
 
 
     </script>
