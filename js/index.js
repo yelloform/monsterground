@@ -6,7 +6,7 @@ $(document).ready(function() {
                 slidesNavigation: true,
                 paddingTop: 0,
                 paddingBottom: 0,
-                scrollOverflow:true,
+                /*scrollOverflow:true,*/
                 afterLoad: function(anchorLink, index){
                     var loadedSection = $(this);
 
