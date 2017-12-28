@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/jquery.fullpage.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/panel.css" />
- <!--   <link rel="stylesheet" href="css/modal.css">-->
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
@@ -55,7 +55,7 @@
 
 <body>
     <div class="main_menu">
-        <nav role="navigation" class="main_menu">
+        <nav  class="main_menu">
             <div id="menuToggle">
                 <input type="checkbox" />
                 <span></span>
@@ -98,15 +98,14 @@
         <!-------------------------------section0 home end--->
         <div class="section section-about">
             <div class="container-fluid">
-
                 <div class="about-title" >
-                   <div class="overlay">
                    <div class="title-wrap">
                     <h2>공감되는, 마음을 움직이는 영상을 만듭니다</h2>
                     <p>몬스터그라운드 미디어는 아이디어와 열정, 감동을 통해 당신의 순간을 연출합니다.<br/>스토리와 감성, 비즈니스까지 유저와 브랜드가 즐거움의 가치를 공유하는 콘텐츠를 만듭니다.</p>
                     </div>
+                    <div class="overlay"></div>
                 </div>
-                </div>
+
                 <div class="about-container">
                     <div class="box-wrap">
                         <div class="box">
@@ -146,7 +145,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <!------------------------section1 about end----->
         <div class="section section-portfolio">
@@ -159,9 +157,8 @@
                         <p>[CM] 제이준 명동플래그쉽스토어<br>홍보영상</p>
                         <a href="#pofol01" class="info" data-toggle="modal">Read More</a>
                     </div>
-
                 </div>
-                <div class="modal" id="pofol01">
+                <div class="modal fade" id="pofol01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -172,8 +169,6 @@
                         <div class="modal-body">
                           <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/dsXQ0hPJltE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                         </div>
-
-
                       </div>
                 </div>
             </div>
@@ -185,22 +180,20 @@
                         <a href="#pofol02" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
-                <div class="modal" id="pofol02">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">랜드로버 벨라런칭</h4>
-                          <button type="button" class="close"
-                          data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/3vg1aBDURAQ?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-
-                      </div>
+                <div class="modal fade" id="pofol02">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">랜드로버 벨라런칭</h4>
+                              <button type="button" class="close"
+                              data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/3vg1aBDURAQ?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-            </div>
                 <div class="view view-over ">
                     <img src="img/gallery03.JPG" alt="">
                     <div class="mask">
@@ -209,22 +202,22 @@
                         <a href="#pofol03" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
-                <div class="modal" id="pofol03">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">Modal Heading</h4>
-                          <button type="button" class="close"
-                          data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/kRESUUVsOUk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
+                <div class="modal fade" id="pofol03">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="close"
+                              data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/kRESUUVsOUk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
 
 
-                      </div>
+                          </div>
+                    </div>
                 </div>
-            </div>
                 <div class="view view-over ">
                     <img src="img/gallery04.JPG" alt="">
                     <div class="mask">
@@ -233,22 +226,20 @@
                         <a href="#pofol04" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
-                <div class="modal" id="pofol04">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">KT 스카이라이프</h4>
-                          <button type="button" class="close"
-                          data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/yM-ewo-xZQg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-
-                      </div>
+                <div class="modal fade" id="pofol04">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">KT 스카이라이프</h4>
+                              <button type="button" class="close"
+                              data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/yM-ewo-xZQg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-            </div>
                 <div class="view view-over ">
                     <img src="img/gallery05.jpg" alt="">
                     <div class="mask">
@@ -257,22 +248,20 @@
                         <a href="#pofol05" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
-                <div class="modal" id="pofol05">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">르나드블랑</h4>
-                          <button type="button" class="close"
-                          data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                         <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-
-                      </div>
+                <div class="modal fade" id="pofol05">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">르나드블랑</h4>
+                              <button type="button" class="close"
+                              data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                             <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-            </div>
                 <div class="view view-over ">
                     <img src="img/gallery06.jpg" alt="">
                     <div class="mask">
@@ -281,22 +270,20 @@
                         <a href="#pofol06" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
-                <div class="modal" id="pofol06">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">Modal Heading</h4>
-                          <button type="button" class="close"
-                          data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-
-                      </div>
+                <div class="modal fade" id="pofol06">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="close"
+                              data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-            </div>
                 <div class="view view-over ">
                     <img src="img/gallery07.jpg" alt="">
                     <div class="mask">
@@ -305,22 +292,20 @@
                         <a href="#pofol07" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
-                <div class="modal" id="pofol07">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">Modal Heading</h4>
-                          <button type="button" class="close"
-                          data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-
-                      </div>
+                <div class="modal fade" id="pofol07">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="close"
+                              data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-            </div>
                 <div class="view view-over  ">
                     <img src="img/gallery08.jpg" alt="">
                     <div class="mask">
@@ -329,28 +314,22 @@
                         <a href="#pofol08" class="info" data-toggle="modal">Read More</a>
                     </div>
                 </div>
-                <div class="modal" id="pofol08">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">Modal Heading</h4>
-                          <button type="button" class="close"
-                          data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                          <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
+                <div class="modal fade" id="pofol08">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="close"
+                              data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <iframe style="width:965px; height:500px;" src="https://www.youtube.com/embed/vBSPeAwTW40?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
 
-                      </div>
+                          </div>
+                    </div>
                 </div>
             </div>
-            </div>
-
-
-
-
-
-
         </div>
 
         <!----------------------------section2 Business end-->
@@ -482,31 +461,9 @@
 
     <!--fullpage id end-->
 
-    <!--<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>-->
     <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery.fullpage.js"></script>
-    <script src="js/scrolloverflow.min.js"></script>
-    <!--<script src="js/util.js"></script>
-    <script src="js/modal.js"></script>-->
-        <script src="js/TweenLite.min.js"></script>
     <script src="js/index.js"></script>
-    <script>
-        /*var vid = document.getElementById("bgvid");
-        vid.autoplay = true;
-        vid.load();*/
-
-
-
-
-    </script>
-
-
-
-    <!--<script type="text/javascript">
-        var hs = jQuery.noConflict();
-    </script>-->
-    <!--<script src="js/swiper.js"></script>-->
 
 
 
