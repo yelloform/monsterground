@@ -413,7 +413,7 @@ span.font_red {
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 .section-qna.active .qnaWrap .subject, .section-home.active .subject{
 text-align: center;
-    font: bold 300% Consolas, Monaco, monospace;
+    font: bold 300% /*Consolas, Monaco*/, monospace;
 	border-right: .1em solid #fff;
 	width: 16.5em;
 	width: 26ch;
@@ -428,7 +428,7 @@ text-align: center;
 .section-qna .qnaFrom { width:100%; height:130px; position:absolute; top:45%;  overflow: hidden; text-align: center; z-index: 55;}
 .section-qna .qnaFrom form{width:100%; }
 .section-qna .qnaFrom form div{display: inline-block; }
-.section-qna .qnaFrom form div input{ width:85%; background:transparent; border:0; border-bottom:2px solid #fff; padding:5px; -webkit-box-sizing: border-box; box-sizing: border-box; margin:30px !important ; color:#ededed; }
+.section-qna .qnaFrom form div input{ width:85%; background:transparent; border:0; border-bottom:2px solid #fff; padding:0.5rem; -webkit-box-sizing: border-box; box-sizing: border-box; margin:-2rem 3rem !important ; color:#ededed; font-size: 2rem;}
 .section-qna .qnaFrom form button{color:#fff; background:transparent; border:0;}
 
 
@@ -457,9 +457,10 @@ text-align: center;
     color: #2c2c2c;
 }
 
-/*.font-eng {
-    font-family: 'Fjalla One', sans-serif;
-}*/
+.font-eng {
+    /*font-family: 'Fjalla One', sans-serif;*/
+    font-size: 1.3rem;
+}
 
 /*-------------------------------------section contact end*/
 
